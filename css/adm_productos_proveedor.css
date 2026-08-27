@@ -1,0 +1,534 @@
+/*=====================================================
+ CoDevPro Technology
+ Archivo: css/adm_productos_proveedor.css
+ Módulo: Productos del Proveedor
+ Sistema: Inventa
+=====================================================*/
+
+/*=====================================================
+ HEADER
+=====================================================*/
+
+.adm-productos-proveedor-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.adm-productos-proveedor-breadcrumb {
+  font-size: 0.82rem;
+
+  font-weight: 600;
+
+  color: #0d6efd;
+}
+
+.adm-productos-proveedor-title-icon {
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+
+  font-size: 1.45rem;
+}
+
+.adm-productos-proveedor-title {
+  font-size: 1.75rem;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.adm-productos-proveedor-subtitle {
+  color: #6c757d;
+
+  font-size: 0.92rem;
+}
+
+.adm-productos-proveedor-header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+/*=====================================================
+ KPI
+=====================================================*/
+
+.adm-productos-proveedor-kpi {
+  border: 1px solid #e9ecef;
+
+  border-radius: 14px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.035);
+
+  transition: all 0.2s ease;
+}
+
+.adm-productos-proveedor-kpi:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.adm-productos-proveedor-kpi-label {
+  display: block;
+
+  font-size: 0.78rem;
+
+  font-weight: 600;
+
+  color: #6c757d;
+
+  margin-bottom: 6px;
+}
+
+.adm-productos-proveedor-kpi-value {
+  font-size: 1.65rem;
+
+  font-weight: 700;
+
+  margin: 0;
+
+  color: #212529;
+}
+
+.adm-productos-proveedor-kpi-description {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 0.75rem;
+
+  color: #8a8f98;
+}
+
+.adm-productos-proveedor-kpi-icon {
+  width: 44px;
+
+  height: 44px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+
+  font-size: 1.15rem;
+}
+
+.adm-productos-proveedor-kpi-icon-success {
+  background: rgba(25, 135, 84, 0.1);
+
+  color: #198754;
+}
+
+.adm-productos-proveedor-kpi-icon-danger {
+  background: rgba(220, 53, 69, 0.1);
+
+  color: #dc3545;
+}
+
+.adm-productos-proveedor-kpi-icon-primary {
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+}
+
+/*=====================================================
+ CARDS
+=====================================================*/
+
+.adm-productos-proveedor-card {
+  border: 1px solid #e9ecef;
+
+  border-radius: 14px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.035);
+
+  overflow: hidden;
+}
+
+.adm-productos-proveedor-card-header {
+  background: #ffffff;
+
+  border-bottom: 1px solid #edf0f2;
+
+  padding: 1rem 1.25rem;
+}
+
+.adm-productos-proveedor-section-icon {
+  width: 38px;
+
+  height: 38px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(13, 110, 253, 0.09);
+
+  color: #0d6efd;
+
+  font-size: 1rem;
+}
+
+/*=====================================================
+ FILTROS
+=====================================================*/
+
+.adm-productos-proveedor-card .form-label {
+  font-size: 0.82rem;
+
+  color: #343a40;
+
+  margin-bottom: 6px;
+}
+
+.adm-productos-proveedor-card .form-control,
+.adm-productos-proveedor-card .form-select {
+  min-height: 42px;
+
+  border-color: #dee2e6;
+
+  border-radius: 8px;
+
+  font-size: 0.87rem;
+}
+
+.adm-productos-proveedor-card .input-group-text {
+  background: #f8f9fa;
+
+  border-color: #dee2e6;
+
+  color: #6c757d;
+}
+
+.adm-productos-proveedor-card .form-control:focus,
+.adm-productos-proveedor-card .form-select:focus {
+  border-color: #86b7fe;
+
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+/*=====================================================
+ TABLA
+=====================================================*/
+
+.adm-productos-proveedor-table {
+  font-size: 0.85rem;
+}
+
+.adm-productos-proveedor-table thead th {
+  background: #f8f9fa;
+
+  color: #495057;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.02em;
+
+  white-space: nowrap;
+
+  border-bottom: 1px solid #dee2e6;
+
+  padding-top: 0.9rem;
+
+  padding-bottom: 0.9rem;
+}
+
+.adm-productos-proveedor-table tbody td {
+  padding-top: 0.85rem;
+
+  padding-bottom: 0.85rem;
+
+  border-color: #edf0f2;
+
+  vertical-align: middle;
+}
+
+.adm-productos-proveedor-table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.adm-productos-proveedor-table tbody tr:hover {
+  background-color: #f8fbff;
+}
+
+/*=====================================================
+ PRODUCTO
+=====================================================*/
+
+.adm-producto-proveedor-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 220px;
+}
+
+/*=====================================================
+    IMAGEN PRODUCTO - TABLA
+=====================================================*/
+
+.adm-producto-proveedor-imagen {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  max-width: 48px;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f8f9fa;
+
+  border: 1px solid #e9ecef;
+}
+
+.adm-producto-proveedor-imagen img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  padding: 4px;
+}
+
+.adm-producto-proveedor-nombre {
+  font-weight: 600;
+
+  color: #212529;
+
+  line-height: 1.25;
+}
+
+.adm-producto-proveedor-descripcion {
+  font-size: 0.72rem;
+
+  color: #8a8f98;
+
+  margin-top: 2px;
+}
+
+/*=====================================================
+ BADGES
+=====================================================*/
+
+.adm-producto-stock-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 68px;
+
+  padding: 0.35rem 0.55rem;
+
+  border-radius: 20px;
+
+  font-size: 0.72rem;
+
+  font-weight: 600;
+}
+
+.adm-producto-stock-disponible {
+  background: rgba(25, 135, 84, 0.1);
+
+  color: #198754;
+}
+
+.adm-producto-stock-bajo {
+  background: rgba(255, 193, 7, 0.14);
+
+  color: #997404;
+}
+
+.adm-producto-stock-agotado {
+  background: rgba(220, 53, 69, 0.1);
+
+  color: #dc3545;
+}
+
+.adm-producto-estado-activo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0.35rem 0.65rem;
+
+  border-radius: 20px;
+
+  background: rgba(25, 135, 84, 0.1);
+
+  color: #198754;
+
+  font-size: 0.72rem;
+
+  font-weight: 600;
+}
+
+.adm-producto-estado-inactivo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0.35rem 0.65rem;
+
+  border-radius: 20px;
+
+  background: rgba(108, 117, 125, 0.12);
+
+  color: #6c757d;
+
+  font-size: 0.72rem;
+
+  font-weight: 600;
+}
+
+/*=====================================================
+ ACCIONES
+=====================================================*/
+
+.adm-productos-proveedor-acciones {
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+.adm-productos-proveedor-acciones .btn {
+  width: 34px;
+
+  height: 34px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+}
+
+/*=====================================================
+ PAGINACIÓN
+=====================================================*/
+
+.adm-productos-proveedor-card .pagination {
+  gap: 3px;
+}
+
+.adm-productos-proveedor-card .pagination .page-link {
+  border-radius: 7px;
+
+  min-width: 32px;
+
+  text-align: center;
+
+  border: 1px solid #dee2e6;
+
+  color: #495057;
+}
+
+.adm-productos-proveedor-card .pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+
+  border-color: #0d6efd;
+
+  color: #ffffff;
+}
+
+/*=====================================================
+ RESPONSIVE
+=====================================================*/
+
+@media (max-width: 1199.98px) {
+  .adm-productos-proveedor-table {
+    min-width: 1100px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .adm-productos-proveedor-header {
+    align-items: flex-start;
+  }
+
+  .adm-productos-proveedor-title {
+    font-size: 1.4rem;
+  }
+
+  .adm-productos-proveedor-subtitle {
+    font-size: 0.82rem;
+  }
+
+  .adm-productos-proveedor-title-icon {
+    width: 44px;
+
+    height: 44px;
+
+    font-size: 1.2rem;
+  }
+
+  .adm-productos-proveedor-header-actions {
+    width: 100%;
+  }
+
+  .adm-productos-proveedor-header-actions .btn {
+    width: 100%;
+  }
+
+  .adm-productos-proveedor-kpi-value {
+    font-size: 1.4rem;
+  }
+}

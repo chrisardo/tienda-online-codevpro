@@ -1,0 +1,86 @@
+/*======================================================
+=            PERFIL CLIENTE
+=            CoDevPro Technology
+======================================================*/
+
+/*=========================================
+=            CONTENEDOR
+=========================================*/
+
+.perfil-vista {
+  opacity: 0;
+
+  transform: translateY(15px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+
+  display: none;
+}
+
+/*=========================================
+=            VISTA ACTIVA
+=========================================*/
+
+.perfil-vista.activa {
+  display: block;
+
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+/*=========================================
+=            MENÚ
+=========================================*/
+
+.menuPerfil {
+  transition: all 0.25s ease;
+
+  border-left: 4px solid transparent;
+
+  font-weight: 500;
+}
+
+/*=========================================
+=            HOVER
+=========================================*/
+
+.menuPerfil:hover {
+  background: #f8f9fa;
+
+  border-left-color: #0d6efd;
+
+  padding-left: 22px;
+}
+
+/*=========================================
+=            ACTIVO
+=========================================*/
+
+.menuPerfil.active {
+  background: #0d6efd;
+
+  color: #fff !important;
+
+  border-left-color: #0a58ca;
+
+  font-weight: 700;
+}
+
+.menuPerfil.active i {
+  color: #fff;
+}
+
+/*=========================================
+=            TARJETAS
+=========================================*/
+
+.card {
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}

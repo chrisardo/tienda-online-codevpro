@@ -1,0 +1,624 @@
+/* =====================================================
+CoDevPro Technology
+Archivo: css/adm_registrar_empleado.css
+Módulo: Registrar Empleado
+===================================================== */
+
+/* =====================================================
+CONTENEDOR PRINCIPAL
+===================================================== */
+
+main.container-fluid {
+  min-height: calc(100vh - 70px);
+}
+
+/* =====================================================
+ENCABEZADO DE LA PÁGINA
+===================================================== */
+
+main h2 {
+  color: #212529;
+  letter-spacing: -0.3px;
+}
+
+main > .d-flex:first-child p {
+  font-size: 0.92rem;
+}
+
+/* =====================================================
+TARJETAS DEL FORMULARIO
+===================================================== */
+
+#formRegistrarEmpleado .card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+#formRegistrarEmpleado .card:hover {
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* =====================================================
+CABECERA DE LAS TARJETAS
+===================================================== */
+
+#formRegistrarEmpleado .card-header {
+  background: #ffffff;
+}
+
+#formRegistrarEmpleado .card-header h5 {
+  color: #212529;
+  font-size: 1rem;
+}
+
+#formRegistrarEmpleado .card-header small {
+  font-size: 0.82rem;
+}
+
+/* =====================================================
+ETIQUETAS
+===================================================== */
+
+#formRegistrarEmpleado .form-label {
+  color: #343a40;
+  font-size: 0.88rem;
+  margin-bottom: 0.45rem;
+}
+
+/* =====================================================
+INPUTS Y SELECTS
+===================================================== */
+
+#formRegistrarEmpleado .form-control,
+#formRegistrarEmpleado .form-select {
+  min-height: 44px;
+  border-color: #dee2e6;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+#formRegistrarEmpleado .form-control:focus,
+#formRegistrarEmpleado .form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+#formRegistrarEmpleado .form-control::placeholder {
+  color: #adb5bd;
+  font-size: 0.88rem;
+}
+
+/* =====================================================
+INPUT GROUP
+===================================================== */
+
+#formRegistrarEmpleado .input-group-text {
+  min-width: 44px;
+  justify-content: center;
+  background: #f8f9fa;
+  border-color: #dee2e6;
+  color: #6c757d;
+}
+
+#formRegistrarEmpleado .input-group .form-control {
+  border-radius: 0 8px 8px 0;
+}
+
+#formRegistrarEmpleado .input-group-text {
+  border-radius: 8px 0 0 8px;
+}
+
+/* =====================================================
+CAMPOS DESHABILITADOS
+===================================================== */
+
+#formRegistrarEmpleado .form-select:disabled {
+  background-color: #f8f9fa;
+  color: #adb5bd;
+  cursor: not-allowed;
+}
+
+/* =====================================================
+TEXTO DE AYUDA
+===================================================== */
+
+#formRegistrarEmpleado .form-text {
+  font-size: 0.78rem;
+  color: #6c757d;
+  line-height: 1.45;
+}
+
+/* =====================================================
+VALIDACIÓN BOOTSTRAP
+===================================================== */
+
+#formRegistrarEmpleado .invalid-feedback {
+  font-size: 0.78rem;
+}
+
+#formRegistrarEmpleado .is-invalid {
+  border-color: #dc3545;
+}
+
+#formRegistrarEmpleado .is-valid {
+  border-color: #198754;
+}
+
+/* =====================================================
+FOTO DEL EMPLEADO
+===================================================== */
+
+.empleado-imagen-container {
+  width: 100%;
+}
+
+.empleado-imagen-preview {
+  width: 100%;
+  min-height: 245px;
+  border: 2px dashed #dee2e6;
+  border-radius: 14px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.empleado-imagen-preview:hover {
+  border-color: #86b7fe;
+  background: #f8fbff;
+}
+
+/* =====================================================
+PLACEHOLDER DE IMAGEN
+===================================================== */
+
+.empleado-imagen-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #adb5bd;
+  gap: 6px;
+  text-align: center;
+}
+
+.empleado-imagen-placeholder i {
+  opacity: 0.65;
+}
+
+.empleado-imagen-placeholder span {
+  font-size: 0.82rem;
+}
+
+/* =====================================================
+IMAGEN REAL
+===================================================== */
+
+.empleado-imagen-preview img {
+  width: 100%;
+  height: 100%;
+  min-height: 245px;
+  object-fit: cover;
+  display: block;
+}
+
+/* =====================================================
+BOTONES DE IMAGEN
+===================================================== */
+
+#btnSeleccionarImagen,
+#btnEliminarImagen {
+  min-height: 38px;
+  border-radius: 8px;
+}
+
+#btnSeleccionarImagen {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+#btnSeleccionarImagen:hover {
+  color: #ffffff;
+}
+
+#btnEliminarImagen {
+  width: 42px;
+}
+
+/* =====================================================
+SECCIÓN DE UBICACIÓN
+===================================================== */
+
+#id_pais,
+#id_departamento,
+#id_provincia,
+#id_distrito {
+  cursor: pointer;
+}
+
+/* =====================================================
+SECCIÓN INFORMACIÓN LABORAL
+===================================================== */
+
+#id_rol,
+#estado {
+  cursor: pointer;
+}
+
+/* =====================================================
+PERMISOS
+===================================================== */
+
+#contenedorPermisos {
+  border-radius: 0 0 14px 14px;
+}
+
+#contenedorPermisos table {
+  margin-bottom: 0;
+}
+
+#contenedorPermisos thead th {
+  background: #f8f9fa;
+  color: #495057;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+#contenedorPermisos tbody td {
+  font-size: 0.87rem;
+  border-color: #edf0f2;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+/* =====================================================
+NOMBRE DEL MÓDULO
+===================================================== */
+
+#contenedorPermisos tbody td:first-child {
+  font-weight: 600;
+  color: #343a40;
+}
+
+#contenedorPermisos tbody td:first-child i {
+  color: #0d6efd;
+  margin-right: 8px;
+}
+
+/* =====================================================
+CHECKBOX DE PERMISOS
+===================================================== */
+
+#contenedorPermisos .form-check-input {
+  width: 1.15rem;
+  height: 1.15rem;
+  cursor: pointer;
+  margin-top: 0;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+#contenedorPermisos .form-check-input:hover {
+  transform: scale(1.08);
+}
+
+#contenedorPermisos .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* =====================================================
+FILAS DE PERMISOS
+===================================================== */
+
+#contenedorPermisos tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+#contenedorPermisos tbody tr:hover {
+  background-color: #f8fbff;
+}
+
+/* =====================================================
+MENSAJE SIN ROL
+===================================================== */
+
+#mensajeSinRol {
+  background: #ffffff;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mensajeSinRol h6 {
+  color: #495057;
+}
+
+#mensajeSinRol p {
+  max-width: 500px;
+  font-size: 0.88rem;
+}
+
+/* =====================================================
+MENSAJE SIN PERMISOS
+===================================================== */
+
+#mensajeSinPermisos {
+  background: #ffffff;
+  min-height: 220px;
+}
+
+#mensajeSinPermisos h6 {
+  color: #495057;
+}
+
+#mensajeSinPermisos p {
+  font-size: 0.88rem;
+}
+
+/* =====================================================
+ESTADO DE CARGA DE PERMISOS
+===================================================== */
+
+#estadoCargaPermisos {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#estadoCargaPermisos .spinner-border {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.15em;
+}
+
+/* =====================================================
+MENSAJE GENERAL DEL FORMULARIO
+===================================================== */
+
+#mensajeEmpleado {
+  border-radius: 10px;
+}
+
+#mensajeEmpleado .alert {
+  border-radius: 10px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* =====================================================
+BOTONES INFERIORES
+===================================================== */
+
+#formRegistrarEmpleado .card:last-child {
+  position: relative;
+}
+
+#formRegistrarEmpleado .card:last-child .card-body {
+  padding: 1rem 1.25rem;
+}
+
+#formRegistrarEmpleado .btn {
+  min-height: 42px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+#formRegistrarEmpleado .btn:hover {
+  transform: translateY(-1px);
+}
+
+#btnRegistrarEmpleado {
+  min-width: 190px;
+}
+
+#btnLimpiarEmpleado {
+  min-width: 110px;
+}
+
+/* =====================================================
+ESTADO DE CARGA DEL BOTÓN REGISTRAR
+===================================================== */
+
+#btnRegistrarEmpleado:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+  transform: none;
+}
+
+/* =====================================================
+SCROLL TABLA PERMISOS
+===================================================== */
+
+#contenedorPermisos {
+  scrollbar-width: thin;
+  scrollbar-color: #adb5bd #f8f9fa;
+}
+
+#contenedorPermisos::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+
+#contenedorPermisos::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+#contenedorPermisos::-webkit-scrollbar-thumb {
+  background: #adb5bd;
+  border-radius: 10px;
+}
+
+#contenedorPermisos::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}
+
+/* =====================================================
+RESPONSIVE TABLET
+===================================================== */
+
+@media (max-width: 991.98px) {
+  .empleado-imagen-preview {
+    min-height: 280px;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .empleado-imagen-preview img {
+    min-height: 280px;
+  }
+
+  .empleado-imagen-container {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+/* =====================================================
+RESPONSIVE MÓVIL
+===================================================== */
+
+@media (max-width: 767.98px) {
+  main.container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  main h2 {
+    font-size: 1.35rem;
+  }
+
+  main > .d-flex:first-child {
+    align-items: flex-start !important;
+  }
+
+  #formRegistrarEmpleado .card {
+    border-radius: 11px;
+  }
+
+  #formRegistrarEmpleado .card-body {
+    padding: 1rem;
+  }
+
+  .empleado-imagen-preview {
+    min-height: 240px;
+  }
+
+  .empleado-imagen-preview img {
+    min-height: 240px;
+  }
+
+  #contenedorPermisos {
+    overflow-x: auto;
+  }
+
+  #contenedorPermisos table {
+    min-width: 650px;
+  }
+
+  #formRegistrarEmpleado .card:last-child .d-flex {
+    flex-direction: column-reverse;
+  }
+
+  #formRegistrarEmpleado .card:last-child .btn {
+    width: 100%;
+  }
+
+  #btnRegistrarEmpleado,
+  #btnLimpiarEmpleado {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* =====================================================
+MÓVILES PEQUEÑOS
+===================================================== */
+
+@media (max-width: 575.98px) {
+  main h2 {
+    font-size: 1.2rem;
+  }
+
+  main > .d-flex:first-child p {
+    font-size: 0.82rem;
+  }
+
+  #formRegistrarEmpleado .card-header {
+    padding: 0.85rem 1rem !important;
+  }
+
+  #formRegistrarEmpleado .card-header h5 {
+    font-size: 0.92rem;
+  }
+
+  #formRegistrarEmpleado .card-header small {
+    font-size: 0.76rem;
+  }
+
+  .empleado-imagen-preview {
+    min-height: 220px;
+  }
+
+  .empleado-imagen-preview img {
+    min-height: 220px;
+  }
+
+  #mensajeSinRol,
+  #mensajeSinPermisos {
+    min-height: 190px;
+  }
+}
+
+/* =====================================================
+ACCESIBILIDAD
+===================================================== */
+
+#formRegistrarEmpleado button:focus-visible,
+#formRegistrarEmpleado a:focus-visible,
+#formRegistrarEmpleado input:focus-visible,
+#formRegistrarEmpleado select:focus-visible {
+  outline: 3px solid rgba(13, 110, 253, 0.25);
+  outline-offset: 2px;
+}
+
+/* =====================================================
+REDUCCIÓN DE MOVIMIENTO
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  #formRegistrarEmpleado .card,
+  #formRegistrarEmpleado .btn,
+  #formRegistrarEmpleado .form-control,
+  #formRegistrarEmpleado .form-select,
+  #contenedorPermisos tbody tr,
+  #contenedorPermisos .form-check-input {
+    transition: none !important;
+  }
+}

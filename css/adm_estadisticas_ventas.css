@@ -1,0 +1,1393 @@
+/*=====================================================
+  CoDevPro Technology
+  CSS: adm_estadisticas_ventas.css
+  Módulo: Estadísticas de Ventas
+=====================================================*/
+
+/*=====================================================
+  CONTENEDOR GENERAL
+======================================================*/
+
+.estadisticas-ventas-page {
+  min-height: calc(100vh - 70px);
+}
+
+/*=====================================================
+  ENCABEZADO
+======================================================*/
+
+.estadisticas-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 6px 0;
+}
+
+.estadisticas-header-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.estadisticas-header-icon {
+  width: 56px;
+
+  height: 56px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+
+  font-size: 25px;
+
+  flex-shrink: 0;
+}
+
+.estadisticas-title {
+  margin: 0;
+
+  font-size: 26px;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.estadisticas-subtitle {
+  margin: 5px 0 0;
+
+  color: #6c757d;
+
+  font-size: 14px;
+}
+
+.estadisticas-header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.btn-estadisticas {
+  min-height: 42px;
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+/*=====================================================
+  CARDS GENERALES
+======================================================*/
+
+.estadisticas-card {
+  border: 1px solid #e9ecef;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.04);
+}
+
+.estadisticas-card .card-body {
+  padding: 22px;
+}
+
+/*=====================================================
+  FILTROS
+======================================================*/
+
+.filtros-card {
+  overflow: visible;
+}
+
+.filtros-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid #edf0f2;
+}
+
+.filtros-title-wrapper {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+.filtros-icon {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(13, 110, 253, 0.09);
+
+  color: #0d6efd;
+
+  font-size: 17px;
+}
+
+.filtros-title {
+  margin: 0;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.filtros-description {
+  margin: 3px 0 0;
+
+  font-size: 13px;
+
+  color: #6c757d;
+}
+
+.filtros-badge {
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  background: #f8f9fa;
+
+  color: #6c757d;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+.filtro-label {
+  color: #495057;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  margin-bottom: 7px;
+}
+
+.filtro-label i {
+  color: #0d6efd;
+}
+
+.filtro-input-group .input-group-text {
+  background: #f8f9fa;
+
+  border-color: #dee2e6;
+
+  color: #6c757d;
+}
+
+.filtro-input-group .form-control {
+  border-left: 0;
+}
+
+.filtros-card .form-control,
+.filtros-card .form-select {
+  min-height: 42px;
+
+  border-radius: 8px;
+
+  border-color: #dee2e6;
+
+  font-size: 13px;
+
+  color: #495057;
+
+  box-shadow: none;
+}
+
+.filtros-card .form-control:focus,
+.filtros-card .form-select:focus {
+  border-color: #86b7fe;
+
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.1);
+}
+
+.filtros-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 22px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #edf0f2;
+}
+
+.filtros-periodo-actual {
+  display: flex;
+
+  align-items: center;
+
+  color: #6c757d;
+
+  font-size: 13px;
+}
+
+.filtros-periodo-actual i {
+  color: #0d6efd;
+}
+
+.btn-aplicar-filtros {
+  min-height: 42px;
+
+  padding: 8px 18px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+/*=====================================================
+  TARJETAS RESUMEN
+======================================================*/
+
+.estadistica-resumen-card {
+  height: 100%;
+
+  border: 1px solid #e9ecef;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.estadistica-resumen-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+}
+
+.estadistica-resumen-card .card-body {
+  padding: 20px;
+}
+
+.estadistica-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.estadistica-icon {
+  width: 46px;
+
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 20px;
+}
+
+.estadistica-icon-ventas {
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+}
+
+.estadistica-icon-ingresos {
+  background: rgba(25, 135, 84, 0.1);
+
+  color: #198754;
+}
+
+.estadistica-icon-productos {
+  background: rgba(255, 193, 7, 0.13);
+
+  color: #d39e00;
+}
+
+.estadistica-icon-ticket {
+  background: rgba(111, 66, 193, 0.1);
+
+  color: #6f42c1;
+}
+
+.estadistica-comparacion {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 4px 8px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.estadistica-comparacion.positiva {
+  color: #198754;
+
+  background: rgba(25, 135, 84, 0.09);
+}
+
+.estadistica-comparacion.negativa {
+  color: #dc3545;
+
+  background: rgba(220, 53, 69, 0.09);
+}
+
+.estadistica-comparacion i {
+  font-size: 15px;
+}
+
+.estadistica-card-content {
+  margin-top: 17px;
+}
+
+.estadistica-label {
+  display: block;
+
+  color: #6c757d;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+.estadistica-valor {
+  margin: 4px 0 2px;
+
+  color: #212529;
+
+  font-size: 25px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+}
+
+.estadistica-periodo {
+  display: block;
+
+  color: #adb5bd;
+
+  font-size: 11px;
+}
+
+/*=====================================================
+  TARJETAS MINI
+======================================================*/
+
+.estadistica-mini-card {
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 17px;
+
+  border: 1px solid #e9ecef;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.estadistica-mini-card .estadistica-mini-icon {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #f1f5f9;
+
+  color: #0d6efd;
+
+  font-size: 18px;
+}
+
+.estadistica-mini-card span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #6c757d;
+
+  font-size: 12px;
+}
+
+.estadistica-mini-card strong {
+  display: block;
+
+  color: #212529;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+/*=====================================================
+  GRÁFICOS
+======================================================*/
+
+.grafico-card {
+  height: 100%;
+}
+
+.grafico-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+}
+
+.grafico-title {
+  margin: 0;
+
+  color: #212529;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.grafico-subtitle {
+  margin: 4px 0 0;
+
+  color: #6c757d;
+
+  font-size: 12px;
+}
+
+.grafico-selector .form-select {
+  width: 120px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+}
+
+.grafico-container {
+  position: relative;
+
+  width: 100%;
+}
+
+.grafico-evolucion {
+  height: 310px;
+}
+
+.grafico-dona {
+  height: 310px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.grafico-categorias,
+.grafico-sucursales {
+  height: 300px;
+}
+
+.grafico-container canvas {
+  width: 100% !important;
+
+  height: 100% !important;
+}
+
+.grafico-vacio {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #adb5bd;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  font-size: 13px;
+}
+
+.grafico-vacio i {
+  font-size: 34px;
+
+  color: #ced4da;
+}
+
+.grafico-vacio.oculto {
+  display: none;
+}
+
+/*=====================================================
+  RANKINGS
+======================================================*/
+
+.ranking-card {
+  height: 100%;
+}
+
+.ranking-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 15px;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #edf0f2;
+}
+
+.ranking-header-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.ranking-icon {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(255, 193, 7, 0.12);
+
+  color: #d39e00;
+
+  font-size: 18px;
+}
+
+.ranking-title {
+  margin: 0;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.ranking-subtitle {
+  margin: 3px 0 0;
+
+  color: #6c757d;
+
+  font-size: 12px;
+}
+
+.ranking-ver-todos {
+  border: 1px solid #e9ecef;
+
+  color: #6c757d;
+
+  font-size: 11px;
+
+  border-radius: 7px;
+}
+
+.ranking-ver-todos:hover {
+  color: #0d6efd;
+
+  background: #f8f9fa;
+}
+
+.ranking-list {
+  min-height: 245px;
+}
+
+.ranking-empty {
+  min-height: 220px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #adb5bd;
+
+  font-size: 13px;
+}
+
+.ranking-empty i {
+  font-size: 35px;
+
+  color: #ced4da;
+}
+
+/*=====================================================
+  ITEMS DEL RANKING
+======================================================*/
+
+.ranking-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.ranking-item:last-child {
+  border-bottom: 0;
+}
+
+.ranking-position {
+  width: 28px;
+
+  height: 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #f8f9fa;
+
+  color: #6c757d;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.ranking-item:nth-child(1) .ranking-position {
+  background: rgba(255, 193, 7, 0.14);
+
+  color: #b58100;
+}
+
+.ranking-item:nth-child(2) .ranking-position {
+  background: rgba(108, 117, 125, 0.12);
+
+  color: #495057;
+}
+
+.ranking-item:nth-child(3) .ranking-position {
+  background: rgba(205, 127, 50, 0.12);
+
+  color: #9a5a20;
+}
+
+.ranking-item-info {
+  min-width: 0;
+
+  flex: 1;
+}
+
+.ranking-item-name {
+  display: block;
+
+  overflow: hidden;
+
+  color: #343a40;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+.ranking-item-detail {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #adb5bd;
+
+  font-size: 11px;
+}
+
+.ranking-item-value {
+  text-align: right;
+
+  flex-shrink: 0;
+}
+
+.ranking-item-value strong {
+  display: block;
+
+  color: #212529;
+
+  font-size: 13px;
+}
+
+.ranking-item-value span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #adb5bd;
+
+  font-size: 10px;
+}
+
+/*=====================================================
+  TABLA
+======================================================*/
+
+.tabla-ventas-card {
+  overflow: hidden;
+}
+
+.tabla-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+}
+
+.tabla-title {
+  margin: 0;
+
+  color: #212529;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.tabla-subtitle {
+  margin: 4px 0 0;
+
+  color: #6c757d;
+
+  font-size: 12px;
+}
+
+.tabla-header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.tabla-registros {
+  color: #6c757d;
+
+  font-size: 12px;
+}
+
+.tabla-estadisticas {
+  margin-bottom: 0;
+
+  min-width: 900px;
+}
+
+.tabla-estadisticas thead th {
+  padding: 12px 10px;
+
+  background: #f8f9fa;
+
+  border-bottom: 1px solid #dee2e6;
+
+  color: #495057;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.2px;
+
+  white-space: nowrap;
+}
+
+.tabla-estadisticas tbody td {
+  padding: 13px 10px;
+
+  border-bottom: 1px solid #f1f3f5;
+
+  color: #495057;
+
+  font-size: 12px;
+
+  vertical-align: middle;
+}
+
+.tabla-estadisticas tbody tr:hover {
+  background: #f8fbff;
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+}
+
+.tabla-empty-row:hover {
+  background: transparent !important;
+}
+
+.tabla-empty {
+  min-height: 210px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+}
+
+.tabla-empty-icon {
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 4px;
+
+  border-radius: 50%;
+
+  background: #f8f9fa;
+
+  color: #adb5bd;
+
+  font-size: 23px;
+}
+
+.tabla-empty strong {
+  color: #495057;
+
+  font-size: 13px;
+}
+
+.tabla-empty span {
+  color: #adb5bd;
+
+  font-size: 11px;
+}
+
+/*=====================================================
+  ESTADOS DE VENTA
+======================================================*/
+
+.estado-venta {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.estado-venta-pendiente {
+  color: #856404;
+
+  background: #fff3cd;
+}
+
+.estado-venta-confirmado {
+  color: #055160;
+
+  background: #cff4fc;
+}
+
+.estado-venta-preparando {
+  color: #664d03;
+
+  background: #fff3cd;
+}
+
+.estado-venta-asignado {
+  color: #084298;
+
+  background: #cfe2ff;
+}
+
+.estado-venta-obtenido {
+  color: #41464b;
+
+  background: #e2e3e5;
+}
+
+.estado-venta-entregado {
+  color: #0f5132;
+
+  background: #d1e7dd;
+}
+
+.estado-venta-no-entregado {
+  color: #842029;
+
+  background: #f8d7da;
+}
+
+.estado-venta-cancelado {
+  color: #842029;
+
+  background: #f8d7da;
+}
+
+/*=====================================================
+  PAGINACIÓN
+======================================================*/
+
+.tabla-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 18px;
+
+  padding-top: 16px;
+
+  border-top: 1px solid #edf0f2;
+}
+
+.tabla-info {
+  color: #6c757d;
+
+  font-size: 11px;
+}
+
+.tabla-info strong {
+  color: #495057;
+}
+
+.tabla-footer .pagination {
+  gap: 3px;
+}
+
+.tabla-footer .page-link {
+  min-width: 32px;
+
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 4px 8px;
+
+  border-radius: 6px !important;
+
+  border: 1px solid #dee2e6;
+
+  color: #495057;
+
+  font-size: 11px;
+}
+
+.tabla-footer .page-item.active .page-link {
+  color: #ffffff;
+
+  background: #0d6efd;
+
+  border-color: #0d6efd;
+}
+
+.tabla-footer .page-item.disabled .page-link {
+  color: #adb5bd;
+
+  background: #f8f9fa;
+}
+
+/*=====================================================
+  FLATPICKR
+======================================================*/
+
+.flatpickr-calendar {
+  border-radius: 10px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange {
+  background: #0d6efd;
+
+  border-color: #0d6efd;
+}
+
+/*=====================================================
+  ANIMACIONES
+======================================================*/
+
+@keyframes estadisticasFadeIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+.estadisticas-card,
+.estadistica-resumen-card,
+.estadistica-mini-card {
+  animation: estadisticasFadeIn 0.25s ease;
+}
+
+/*=====================================================
+  RESPONSIVE - TABLET
+======================================================*/
+
+@media (max-width: 1199.98px) {
+  .estadisticas-title {
+    font-size: 23px;
+  }
+
+  .grafico-evolucion {
+    height: 290px;
+  }
+
+  .grafico-dona {
+    height: 290px;
+  }
+}
+
+/*=====================================================
+  RESPONSIVE - TABLET PEQUEÑO
+======================================================*/
+
+@media (max-width: 991.98px) {
+  .estadisticas-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .estadisticas-header-actions {
+    width: 100%;
+  }
+
+  .estadisticas-header-actions .btn {
+    flex: 1;
+  }
+
+  .filtros-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .filtros-badge {
+    align-self: flex-start;
+  }
+
+  .filtros-footer {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .btn-aplicar-filtros {
+    width: 100%;
+  }
+}
+
+/*=====================================================
+  RESPONSIVE - MÓVIL
+======================================================*/
+
+@media (max-width: 767.98px) {
+  .estadisticas-ventas-page {
+    padding-right: 12px !important;
+
+    padding-left: 12px !important;
+  }
+
+  .estadisticas-header-info {
+    align-items: flex-start;
+  }
+
+  .estadisticas-header-icon {
+    width: 48px;
+
+    height: 48px;
+
+    font-size: 21px;
+  }
+
+  .estadisticas-title {
+    font-size: 20px;
+  }
+
+  .estadisticas-subtitle {
+    font-size: 12px;
+
+    line-height: 1.5;
+  }
+
+  .estadisticas-header-actions {
+    flex-direction: column;
+  }
+
+  .estadisticas-header-actions .btn {
+    width: 100%;
+  }
+
+  .estadisticas-card .card-body {
+    padding: 17px;
+  }
+
+  .filtros-title {
+    font-size: 15px;
+  }
+
+  .filtros-description {
+    line-height: 1.5;
+  }
+
+  .filtros-footer {
+    gap: 12px;
+  }
+
+  .filtros-periodo-actual {
+    align-items: flex-start;
+
+    line-height: 1.5;
+  }
+
+  .grafico-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .grafico-selector {
+    width: 100%;
+  }
+
+  .grafico-selector .form-select {
+    width: 100%;
+  }
+
+  .grafico-evolucion {
+    height: 260px;
+  }
+
+  .grafico-dona {
+    height: 260px;
+  }
+
+  .grafico-categorias,
+  .grafico-sucursales {
+    height: 260px;
+  }
+
+  .ranking-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .ranking-ver-todos {
+    align-self: flex-end;
+  }
+
+  .tabla-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .tabla-header-actions {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .tabla-footer {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .tabla-footer nav {
+    width: 100%;
+  }
+
+  .tabla-footer .pagination {
+    justify-content: center;
+  }
+}
+
+/*=====================================================
+  RESPONSIVE - MÓVIL PEQUEÑO
+======================================================*/
+
+@media (max-width: 575.98px) {
+  .estadisticas-header-info {
+    gap: 10px;
+  }
+
+  .estadisticas-header-icon {
+    width: 43px;
+
+    height: 43px;
+
+    border-radius: 10px;
+  }
+
+  .estadisticas-title {
+    font-size: 18px;
+  }
+
+  .estadisticas-subtitle {
+    font-size: 11px;
+  }
+
+  .estadistica-valor {
+    font-size: 22px;
+  }
+
+  .estadistica-mini-card {
+    padding: 14px;
+  }
+
+  .ranking-item-name {
+    max-width: 150px;
+  }
+}

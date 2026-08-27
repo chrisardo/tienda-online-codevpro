@@ -1,0 +1,243 @@
+/* =====================================
+   GALERÍA IMÁGENES
+===================================== */
+
+.dropzone-producto {
+  border: 2px dashed #0d6efd;
+  border-radius: 18px;
+  padding: 50px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #f8fbff;
+}
+
+.dropzone-producto:hover {
+  background: #eef5ff;
+}
+
+.dropzone-producto.dragover {
+  border-color: #198754;
+  background: #e9fff4;
+}
+
+.preview-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.preview-card:hover {
+  transform: translateY(-3px);
+}
+
+.preview-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.preview-toolbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview-principal {
+  background: #ffc107;
+  color: #000;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.btn-delete-image {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #dc3545;
+  color: #fff;
+}
+
+.preview-footer {
+  padding: 12px;
+}
+
+.preview-footer small {
+  display: block;
+}
+/* =====================================
+   GOOGLE PREVIEW
+===================================== */
+
+.google-preview {
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+}
+
+.google-url {
+  color: #198754;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.google-title {
+  color: #1a0dab;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.google-description {
+  color: #4d5156;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* =====================================
+   SIDEBAR PRODUCTO
+===================================== */
+
+.sidebar-producto {
+  top: 90px;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  border-radius: 20px;
+}
+
+@media (max-width: 1199px) {
+  .sidebar-producto {
+    position: relative !important;
+    top: auto !important;
+  }
+}
+/* =====================================
+INDICADORES CAMPOS
+===================================== */
+
+.campo-obligatorio {
+  color: #dc3545;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.campo-opcional {
+  color: #198754;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.campo-obligatorio i,
+.campo-opcional i {
+  margin-right: 3px;
+}
+/*--------------------------------*/
+.preview-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.dropzone-producto {
+  border: 2px dashed #d0d5dd;
+  border-radius: 15px;
+  padding: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropzone-producto:hover {
+  border-color: #0d6efd;
+  background: #f8fbff;
+}
+
+#previewImagenes .card {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+#previewImagenes img {
+  height: 180px;
+  object-fit: cover;
+}
+/*=====================================
+DRAG & DROP SHOPIFY
+======================================*/
+
+.imagen-item {
+  cursor: move;
+}
+
+.drag-handle {
+  position: absolute;
+
+  top: 8px;
+
+  right: 8px;
+
+  z-index: 20;
+
+  width: 34px;
+
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.drag-handle i {
+  font-size: 1.1rem;
+
+  color: #6c757d;
+}
+
+.badge-principal {
+  position: absolute;
+
+  top: 10px;
+
+  left: 10px;
+
+  z-index: 20;
+}
+
+.img-producto-preview {
+  height: 200px;
+
+  object-fit: cover;
+}
+
+.sortable-ghost {
+  opacity: 0.4;
+}
+
+.sortable-chosen {
+  transform: scale(1.02);
+}
+
+.sortable-drag {
+  transform: rotate(2deg);
+}

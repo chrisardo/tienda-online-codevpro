@@ -1,0 +1,1050 @@
+/*=====================================================
+  CoDevPro Technology
+  CSS: adm_deposito_gasto.css
+  Módulo: Ingresos y Gastos
+=====================================================*/
+
+/*=====================================================
+  CONTENEDOR PRINCIPAL
+=====================================================*/
+
+.deposito-gasto-page {
+  min-height: calc(100vh - 70px);
+}
+
+/*=====================================================
+  ENCABEZADO
+=====================================================*/
+
+.deposito-gasto-header {
+  padding-top: 4px;
+}
+
+.page-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 8px;
+
+  color: #6c757d;
+
+  font-size: 0.85rem;
+
+  font-weight: 500;
+}
+
+.page-breadcrumb i {
+  font-size: 0.7rem;
+
+  color: #adb5bd;
+}
+
+.page-breadcrumb .active {
+  color: #495057;
+}
+
+.deposito-gasto-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 0;
+
+  color: #212529;
+
+  font-size: 1.8rem;
+
+  font-weight: 700;
+}
+
+.deposito-gasto-title i {
+  color: #0d6efd;
+
+  font-size: 1.65rem;
+}
+
+.deposito-gasto-description {
+  margin-top: 7px;
+
+  color: #6c757d;
+
+  font-size: 0.92rem;
+}
+
+/*=====================================================
+  BOTÓN NUEVO MOVIMIENTO
+=====================================================*/
+
+.btn-nuevo-movimiento {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 44px;
+
+  padding: 0.65rem 1.15rem;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  box-shadow: 0 3px 10px rgba(13, 110, 253, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-nuevo-movimiento:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 14px rgba(13, 110, 253, 0.2);
+}
+
+/*=====================================================
+  TARJETAS DE RESUMEN
+=====================================================*/
+
+.resumen-card {
+  height: 100%;
+
+  border: 1px solid #e9ecef;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.035);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.resumen-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+}
+
+.resumen-card .card-body {
+  padding: 1.2rem 1.25rem;
+}
+
+.resumen-card-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.resumen-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #6c757d;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+}
+
+.resumen-value {
+  margin: 0;
+
+  color: #212529;
+
+  font-size: 1.55rem;
+
+  font-weight: 700;
+}
+
+.resumen-description {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #adb5bd;
+
+  font-size: 0.76rem;
+}
+
+.resumen-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 48px;
+
+  height: 48px;
+
+  flex: 0 0 48px;
+
+  border-radius: 12px;
+
+  font-size: 1.25rem;
+}
+
+.resumen-ingresos {
+  border-left: 4px solid #198754;
+}
+
+.resumen-ingresos .resumen-icon {
+  color: #198754;
+
+  background: rgba(25, 135, 84, 0.1);
+}
+
+.resumen-gastos {
+  border-left: 4px solid #dc3545;
+}
+
+.resumen-gastos .resumen-icon {
+  color: #dc3545;
+
+  background: rgba(220, 53, 69, 0.1);
+}
+
+.resumen-balance {
+  border-left: 4px solid #0d6efd;
+}
+
+.resumen-balance .resumen-icon {
+  color: #0d6efd;
+
+  background: rgba(13, 110, 253, 0.1);
+}
+
+.resumen-movimientos {
+  border-left: 4px solid #6f42c1;
+}
+
+.resumen-movimientos .resumen-icon {
+  color: #6f42c1;
+
+  background: rgba(111, 66, 193, 0.1);
+}
+
+/*=====================================================
+  TARJETA DE FILTROS
+=====================================================*/
+
+.filtro-card {
+  border: 1px solid #e9ecef;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.035);
+}
+
+.filtro-card .card-body {
+  padding: 1.25rem;
+}
+
+.filtro-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid #edf0f2;
+}
+
+.filtro-title {
+  margin: 0;
+
+  color: #212529;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+}
+
+.filtro-title i {
+  color: #0d6efd;
+}
+
+.filtro-description {
+  margin-top: 4px;
+
+  color: #8a9299;
+
+  font-size: 0.82rem;
+}
+
+/*=====================================================
+  FORMULARIOS
+=====================================================*/
+
+.deposito-gasto-page .form-label {
+  margin-bottom: 6px;
+
+  color: #495057;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+}
+
+.deposito-gasto-page .form-control,
+.deposito-gasto-page .form-select {
+  min-height: 42px;
+
+  border: 1px solid #dfe3e7;
+
+  border-radius: 8px;
+
+  color: #212529;
+
+  font-size: 0.88rem;
+
+  background-color: #ffffff;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.deposito-gasto-page .form-control:focus,
+.deposito-gasto-page .form-select:focus {
+  border-color: #86b7fe;
+
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.1);
+}
+
+.deposito-gasto-page .input-group-text {
+  min-height: 42px;
+
+  border: 1px solid #dfe3e7;
+
+  background: #f8f9fa;
+
+  color: #6c757d;
+
+  font-size: 0.88rem;
+}
+
+.deposito-gasto-page .input-group .form-control {
+  border-left: 0;
+}
+
+.deposito-gasto-page .input-group .input-group-text + .form-control:focus {
+  border-left: 0;
+}
+
+.deposito-gasto-page .form-text {
+  color: #98a0a8;
+
+  font-size: 0.75rem;
+}
+
+/*=====================================================
+  BOTÓN FILTROS
+=====================================================*/
+
+.btn-aplicar-filtros {
+  min-height: 42px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+}
+
+/*=====================================================
+  TABLA DE MOVIMIENTOS
+=====================================================*/
+
+.movimientos-card {
+  border: 1px solid #e9ecef;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.035);
+
+  overflow: hidden;
+}
+
+.movimientos-card-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 74px;
+
+  padding: 1rem 1.25rem;
+
+  border-bottom: 1px solid #edf0f2;
+
+  background: #ffffff;
+}
+
+.movimientos-title {
+  margin: 0;
+
+  color: #212529;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+}
+
+.movimientos-title i {
+  color: #0d6efd;
+}
+
+.movimientos-subtitle {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #8a9299;
+
+  font-size: 0.78rem;
+}
+
+.movimientos-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+}
+
+.movimientos-actions .btn {
+  width: 34px;
+
+  height: 34px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 7px;
+}
+
+/*=====================================================
+  TABLA
+=====================================================*/
+
+.movimientos-table {
+  min-width: 1100px;
+
+  margin: 0;
+}
+
+.movimientos-table thead th {
+  padding: 0.9rem 0.8rem;
+
+  border-bottom: 1px solid #e9ecef;
+
+  background: #f8f9fa;
+
+  color: #6c757d;
+
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.025em;
+
+  white-space: nowrap;
+}
+
+.movimientos-table tbody td {
+  padding: 0.9rem 0.8rem;
+
+  border-bottom: 1px solid #f0f2f4;
+
+  color: #495057;
+
+  font-size: 0.82rem;
+
+  vertical-align: middle;
+}
+
+.movimientos-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.movimientos-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+/*=====================================================
+  ESTADOS TIPO
+=====================================================*/
+
+.badge-movimiento {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0.4rem 0.6rem;
+
+  border-radius: 6px;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+}
+
+.badge-ingreso {
+  color: #198754;
+
+  background: rgba(25, 135, 84, 0.1);
+}
+
+.badge-gasto {
+  color: #dc3545;
+
+  background: rgba(220, 53, 69, 0.1);
+}
+
+/*=====================================================
+  MONTO
+=====================================================*/
+
+.movimiento-monto {
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.movimiento-monto.ingreso {
+  color: #198754;
+}
+
+.movimiento-monto.gasto {
+  color: #dc3545;
+}
+
+/*=====================================================
+  ESTADO VACÍO
+=====================================================*/
+
+.empty-state {
+  display: flex;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-height: 300px;
+
+  padding: 2.5rem 1rem;
+}
+
+.empty-state-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 68px;
+
+  height: 68px;
+
+  margin-bottom: 1rem;
+
+  border-radius: 50%;
+
+  background: #f1f5f9;
+
+  color: #94a3b8;
+
+  font-size: 1.7rem;
+}
+
+.empty-state h6 {
+  margin-bottom: 7px;
+
+  color: #495057;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+}
+
+.empty-state p {
+  max-width: 400px;
+
+  margin-bottom: 1.2rem;
+
+  color: #98a0a8;
+
+  font-size: 0.82rem;
+}
+
+/*=====================================================
+  FOOTER TABLA
+=====================================================*/
+
+.movimientos-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  min-height: 65px;
+
+  padding: 0.85rem 1.25rem;
+
+  border-top: 1px solid #edf0f2;
+
+  background: #ffffff;
+}
+
+.movimientos-info {
+  color: #8a9299;
+
+  font-size: 0.78rem;
+}
+
+.movimientos-info strong {
+  color: #495057;
+}
+
+.movimientos-footer .page-link {
+  min-width: 32px;
+
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0;
+
+  border-radius: 6px;
+
+  color: #495057;
+
+  font-size: 0.78rem;
+}
+
+.movimientos-footer .page-item.active .page-link {
+  color: #ffffff;
+
+  background: #0d6efd;
+
+  border-color: #0d6efd;
+}
+
+/*=====================================================
+  MODALES
+=====================================================*/
+
+.movimiento-modal {
+  border: 0;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.movimiento-modal .modal-header {
+  padding: 1.25rem 1.35rem;
+
+  border-bottom: 1px solid #edf0f2;
+
+  background: #ffffff;
+}
+
+.movimiento-modal .modal-title {
+  color: #212529;
+
+  font-size: 1.05rem;
+
+  font-weight: 700;
+}
+
+.movimiento-modal .modal-title i {
+  color: #0d6efd;
+}
+
+.modal-subtitle {
+  margin-top: 4px;
+
+  color: #8a9299;
+
+  font-size: 0.78rem;
+}
+
+.movimiento-modal .modal-body {
+  padding: 1.35rem;
+}
+
+.movimiento-modal .modal-footer {
+  padding: 1rem 1.35rem;
+
+  border-top: 1px solid #edf0f2;
+
+  background: #f8f9fa;
+}
+
+.movimiento-modal .btn {
+  min-height: 40px;
+
+  border-radius: 8px;
+
+  font-size: 0.85rem;
+
+  font-weight: 600;
+}
+
+/*=====================================================
+  SELECTOR TIPO DE MOVIMIENTO
+=====================================================*/
+
+.tipo-movimiento-selector > .form-label {
+  margin-bottom: 8px;
+}
+
+.tipo-option {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  width: 100%;
+
+  min-height: 70px;
+
+  padding: 0.8rem 1rem;
+
+  border: 1px solid #dee2e6;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  background: #ffffff;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tipo-option:hover {
+  border-color: #adb5bd;
+
+  background: #fafbfc;
+}
+
+.tipo-option-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 42px;
+
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  border-radius: 9px;
+
+  font-size: 1.1rem;
+}
+
+.tipo-option strong {
+  display: block;
+
+  color: #343a40;
+
+  font-size: 0.86rem;
+}
+
+.tipo-option small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #8a9299;
+
+  font-size: 0.73rem;
+}
+
+.tipo-ingreso .tipo-option-icon {
+  color: #198754;
+
+  background: rgba(25, 135, 84, 0.1);
+}
+
+.tipo-gasto .tipo-option-icon {
+  color: #dc3545;
+
+  background: rgba(220, 53, 69, 0.1);
+}
+
+.btn-check:checked + .tipo-ingreso {
+  border-color: #198754;
+
+  background: rgba(25, 135, 84, 0.045);
+
+  box-shadow: 0 0 0 2px rgba(25, 135, 84, 0.08);
+}
+
+.btn-check:checked + .tipo-gasto {
+  border-color: #dc3545;
+
+  background: rgba(220, 53, 69, 0.045);
+
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.08);
+}
+
+/*=====================================================
+  MODAL ELIMINAR
+=====================================================*/
+
+.eliminar-modal {
+  border: 0;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+}
+
+.eliminar-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 64px;
+
+  height: 64px;
+
+  margin: 0 auto;
+
+  border-radius: 50%;
+
+  color: #dc3545;
+
+  background: rgba(220, 53, 69, 0.1);
+
+  font-size: 1.5rem;
+}
+
+.eliminar-modal h5 {
+  color: #212529;
+
+  font-weight: 700;
+}
+
+.eliminar-modal p {
+  font-size: 0.83rem;
+}
+
+/*=====================================================
+  FLATPICKR
+=====================================================*/
+
+.flatpickr-calendar {
+  border: 0;
+
+  border-radius: 10px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/*=====================================================
+  SCROLL TABLA
+=====================================================*/
+
+.movimientos-card .table-responsive {
+  scrollbar-width: thin;
+
+  scrollbar-color: #ced4da transparent;
+}
+
+.movimientos-card .table-responsive::-webkit-scrollbar {
+  height: 7px;
+}
+
+.movimientos-card .table-responsive::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+.movimientos-card .table-responsive::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background: #ced4da;
+}
+
+/*=====================================================
+  RESPONSIVE
+=====================================================*/
+
+@media (max-width: 1199.98px) {
+  .deposito-gasto-title {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .deposito-gasto-page {
+    padding-left: 1rem !important;
+
+    padding-right: 1rem !important;
+  }
+
+  .filtro-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .btn-aplicar-filtros {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .deposito-gasto-title {
+    font-size: 1.45rem;
+  }
+
+  .deposito-gasto-description {
+    font-size: 0.84rem;
+  }
+
+  .btn-nuevo-movimiento {
+    width: 100%;
+  }
+
+  .resumen-card .card-body {
+    padding: 1rem;
+  }
+
+  .resumen-value {
+    font-size: 1.35rem;
+  }
+
+  .resumen-icon {
+    width: 42px;
+
+    height: 42px;
+
+    flex-basis: 42px;
+  }
+
+  .movimientos-card-header {
+    align-items: flex-start;
+  }
+
+  .movimientos-footer {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .movimientos-footer nav {
+    width: 100%;
+  }
+
+  .movimientos-footer .pagination {
+    justify-content: flex-end;
+  }
+
+  .movimiento-modal .modal-body {
+    padding: 1rem;
+  }
+
+  .movimiento-modal .modal-header {
+    padding: 1rem;
+  }
+
+  .movimiento-modal .modal-footer {
+    padding: 0.85rem 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .deposito-gasto-page {
+    padding-left: 0.75rem !important;
+
+    padding-right: 0.75rem !important;
+  }
+
+  .page-breadcrumb {
+    font-size: 0.76rem;
+  }
+
+  .deposito-gasto-title {
+    font-size: 1.3rem;
+
+    gap: 8px;
+  }
+
+  .deposito-gasto-title i {
+    font-size: 1.25rem;
+  }
+
+  .filtro-card .card-body {
+    padding: 1rem;
+  }
+
+  .filtro-header {
+    gap: 12px;
+  }
+
+  .filtro-header .btn {
+    width: 100%;
+  }
+
+  .movimientos-card-header {
+    padding: 0.9rem 1rem;
+  }
+
+  .empty-state {
+    min-height: 260px;
+  }
+}

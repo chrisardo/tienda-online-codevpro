@@ -1,0 +1,161 @@
+.product-card {
+  border: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  transition: 0.35s;
+  background: #fff;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.18);
+}
+
+.product-img {
+  height: 250px;
+  object-fit: contain;
+  transition: 0.4s;
+  padding: 20px;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+.badge-sale {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+}
+
+.product-actions {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: 0.35s;
+}
+
+.product-card:hover .product-actions {
+  opacity: 1;
+}
+
+.action-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.price-new {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.rating i {
+  color: #ffc107;
+}
+
+.info-item {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.btn-cart {
+  border-radius: 50px;
+}
+
+.product-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.35s;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  transition: 0.4s;
+  height: 240px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+/* Botones flotantes */
+
+.floating-buttons {
+  position: absolute;
+
+  top: 15px;
+
+  right: -60px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  transition: 0.35s;
+}
+
+.product-card:hover .floating-buttons {
+  right: 15px;
+}
+
+.floating-buttons button {
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: white;
+
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.floating-buttons button:hover {
+  background: #0d6efd;
+
+  color: white;
+}
+
+.product-image {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.discount {
+  position: absolute;
+
+  top: 15px;
+
+  left: 15px;
+
+  z-index: 10;
+}

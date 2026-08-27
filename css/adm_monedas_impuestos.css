@@ -1,0 +1,763 @@
+/* =====================================================
+   CoDevPro Technology
+   Archivo: css/adm_monedas_impuestos.css
+   Módulo: Monedas e Impuestos
+===================================================== */
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL
+===================================================== */
+
+.adm-monedas-impuestos-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f8f9fa;
+}
+
+/* =====================================================
+   ENCABEZADO
+===================================================== */
+
+.adm-monedas-impuestos-page .page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0 10px;
+}
+
+.adm-monedas-impuestos-page .page-title {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #212529;
+  letter-spacing: -0.3px;
+}
+
+.adm-monedas-impuestos-page .page-title i {
+  color: #0d6efd;
+}
+
+.adm-monedas-impuestos-page .page-description {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 760px;
+}
+
+/* =====================================================
+   TARJETAS GENERALES
+===================================================== */
+
+.adm-monedas-impuestos-page .config-card,
+.adm-monedas-impuestos-page .preview-card,
+.adm-monedas-impuestos-page .info-card {
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.adm-monedas-impuestos-page .config-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.adm-monedas-impuestos-page .config-card:hover {
+  transform: translateY(-1px);
+}
+
+/* =====================================================
+   HEADERS DE LAS TARJETAS
+===================================================== */
+
+.adm-monedas-impuestos-page .card-header {
+  padding: 22px 24px 18px;
+}
+
+.adm-monedas-impuestos-page .card-body {
+  padding: 24px;
+}
+
+.adm-monedas-impuestos-page .card-header h5 {
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.adm-monedas-impuestos-page .card-header p {
+  font-size: 0.85rem;
+}
+
+/* =====================================================
+   ICONOS DE CONFIGURACIÓN
+===================================================== */
+
+.adm-monedas-impuestos-page .config-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 1.35rem;
+}
+
+.adm-monedas-impuestos-page .moneda-icon {
+  color: #0d6efd;
+  background-color: #e9f2ff;
+}
+
+.adm-monedas-impuestos-page .impuesto-icon {
+  color: #198754;
+  background-color: #e9f7ef;
+}
+
+.adm-monedas-impuestos-page .preview-icon {
+  color: #6f42c1;
+  background-color: #f1ebfb;
+}
+
+/* =====================================================
+   FORMULARIOS
+===================================================== */
+
+.adm-monedas-impuestos-page .form-label {
+  margin-bottom: 7px;
+
+  color: #343a40;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.adm-monedas-impuestos-page .form-control,
+.adm-monedas-impuestos-page .form-select {
+  min-height: 44px;
+
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+
+  color: #212529;
+  background-color: #ffffff;
+
+  font-size: 0.9rem;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.adm-monedas-impuestos-page .form-control {
+  padding: 10px 12px;
+}
+
+.adm-monedas-impuestos-page .form-select {
+  padding: 10px 38px 10px 12px;
+}
+
+.adm-monedas-impuestos-page .form-control:hover,
+.adm-monedas-impuestos-page .form-select:hover {
+  border-color: #b6c2ce;
+}
+
+.adm-monedas-impuestos-page .form-control:focus,
+.adm-monedas-impuestos-page .form-select:focus {
+  border-color: #86b7fe;
+
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+
+  outline: none;
+}
+
+.adm-monedas-impuestos-page .form-control::placeholder {
+  color: #adb5bd;
+}
+
+.adm-monedas-impuestos-page .form-text {
+  margin-top: 5px;
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+/* =====================================================
+   INPUT UPPERCASE
+===================================================== */
+
+.adm-monedas-impuestos-page #codigo_moneda {
+  text-transform: uppercase;
+}
+
+/* =====================================================
+   INPUT GROUP - PORCENTAJE
+===================================================== */
+
+.adm-monedas-impuestos-page .input-group .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.adm-monedas-impuestos-page .input-group-text {
+  min-width: 48px;
+
+  justify-content: center;
+
+  border-color: #dee2e6;
+
+  background-color: #f8f9fa;
+  color: #495057;
+
+  font-weight: 600;
+}
+
+/* =====================================================
+   SWITCH DE IMPUESTO
+===================================================== */
+
+.adm-monedas-impuestos-page .tax-switch-box {
+  padding: 17px 18px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background-color: #f8fafc;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.adm-monedas-impuestos-page .tax-switch-box:hover {
+  border-color: #ced4da;
+  background-color: #f5f7fa;
+}
+
+.adm-monedas-impuestos-page .tax-switch-box strong {
+  color: #343a40;
+  font-size: 0.9rem;
+}
+
+.adm-monedas-impuestos-page .tax-switch-box p {
+  margin-top: 4px;
+  font-size: 0.78rem;
+}
+
+/* =====================================================
+   SWITCH BOOTSTRAP
+===================================================== */
+
+.adm-monedas-impuestos-page .form-switch {
+  padding-left: 3rem;
+}
+
+.adm-monedas-impuestos-page .form-switch .form-check-input {
+  width: 2.8rem;
+  height: 1.45rem;
+
+  margin-left: -3rem;
+
+  cursor: pointer;
+
+  border-color: #adb5bd;
+
+  box-shadow: none;
+}
+
+.adm-monedas-impuestos-page .form-switch .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+.adm-monedas-impuestos-page .form-switch .form-check-input:checked {
+  border-color: #198754;
+  background-color: #198754;
+}
+
+/* =====================================================
+   PRECIOS INCLUYEN IMPUESTO
+===================================================== */
+
+.adm-monedas-impuestos-page .impuesto-incluido-box {
+  padding: 15px 17px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  background-color: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.adm-monedas-impuestos-page .impuesto-incluido-box:hover {
+  border-color: #b8c2cc;
+  background-color: #f8f9fa;
+}
+
+.adm-monedas-impuestos-page .impuesto-incluido-box .form-check-input {
+  margin-top: 0.25rem;
+
+  cursor: pointer;
+}
+
+.adm-monedas-impuestos-page .impuesto-incluido-box .form-check-label {
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+
+.adm-monedas-impuestos-page .impuesto-incluido-box strong {
+  color: #343a40;
+}
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.adm-monedas-impuestos-page #btnGuardarConfiguracion,
+.adm-monedas-impuestos-page #btnRestablecer {
+  min-height: 43px;
+
+  padding: 9px 17px;
+
+  border-radius: 8px;
+
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.adm-monedas-impuestos-page #btnGuardarConfiguracion {
+  box-shadow: 0 3px 8px rgba(13, 110, 253, 0.15);
+}
+
+.adm-monedas-impuestos-page #btnGuardarConfiguracion:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 12px rgba(13, 110, 253, 0.2);
+}
+
+.adm-monedas-impuestos-page #btnRestablecer:hover {
+  transform: translateY(-1px);
+}
+
+/* =====================================================
+   VISTA PREVIA
+===================================================== */
+
+.adm-monedas-impuestos-page .preview-card {
+  position: sticky;
+  top: 20px;
+}
+
+.adm-monedas-impuestos-page .price-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 125px;
+
+  margin-bottom: 22px;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #f8f9ff 0%, #eef4ff 100%);
+
+  border: 1px solid #e2e8f0;
+
+  text-align: center;
+}
+
+.adm-monedas-impuestos-page #previewPrecio {
+  color: #212529;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  letter-spacing: -0.7px;
+
+  word-break: break-word;
+}
+
+/* =====================================================
+   DETALLES DE LA VISTA PREVIA
+===================================================== */
+
+.adm-monedas-impuestos-page .preview-details {
+  border-top: 1px solid #edf0f2;
+}
+
+.adm-monedas-impuestos-page .preview-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid #edf0f2;
+
+  font-size: 0.84rem;
+}
+
+.adm-monedas-impuestos-page .preview-row:last-child {
+  border-bottom: 0;
+}
+
+.adm-monedas-impuestos-page .preview-row > span {
+  color: #6c757d;
+}
+
+.adm-monedas-impuestos-page .preview-row > strong {
+  color: #343a40;
+
+  text-align: right;
+
+  max-width: 55%;
+
+  word-break: break-word;
+}
+
+/* =====================================================
+   TARJETA INFORMACIÓN
+===================================================== */
+
+.adm-monedas-impuestos-page .info-card {
+  border-left: 4px solid #0d6efd !important;
+}
+
+.adm-monedas-impuestos-page .info-card .card-body {
+  padding: 20px;
+}
+
+.adm-monedas-impuestos-page .info-icon {
+  width: 38px;
+  min-width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #0d6efd;
+  background-color: #e9f2ff;
+
+  font-size: 1rem;
+}
+
+.adm-monedas-impuestos-page .info-card h6 {
+  margin-bottom: 5px;
+
+  color: #343a40;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.adm-monedas-impuestos-page .info-card p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   ESTADOS DE VALIDACIÓN
+===================================================== */
+
+.adm-monedas-impuestos-page .form-control.is-valid,
+.adm-monedas-impuestos-page .form-select.is-valid {
+  border-color: #198754;
+}
+
+.adm-monedas-impuestos-page .form-control.is-invalid,
+.adm-monedas-impuestos-page .form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.adm-monedas-impuestos-page .invalid-feedback {
+  font-size: 0.75rem;
+}
+
+.adm-monedas-impuestos-page .valid-feedback {
+  font-size: 0.75rem;
+}
+
+/* =====================================================
+   DESACTIVAR CAMPOS DE IMPUESTO
+   Cuando JS agregue .tax-disabled
+===================================================== */
+
+.adm-monedas-impuestos-page .tax-disabled {
+  opacity: 0.55;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* =====================================================
+   ANIMACIÓN DE GUARDADO
+===================================================== */
+
+.adm-monedas-impuestos-page .btn-loading {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.adm-monedas-impuestos-page .btn-loading .spinner-border {
+  width: 0.9rem;
+  height: 0.9rem;
+
+  border-width: 0.12rem;
+}
+
+/* =====================================================
+   SWEET ALERT
+===================================================== */
+
+.swal2-popup {
+  border-radius: 14px !important;
+}
+
+.swal2-title {
+  font-size: 1.25rem !important;
+}
+
+.swal2-html-container {
+  font-size: 0.9rem !important;
+}
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 1199.98px) {
+  .adm-monedas-impuestos-page .preview-card {
+    position: static;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE - TABLET PEQUEÑA
+===================================================== */
+
+@media (max-width: 767.98px) {
+  .adm-monedas-impuestos-page {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .adm-monedas-impuestos-page .page-title {
+    font-size: 1.45rem;
+  }
+
+  .adm-monedas-impuestos-page .page-description {
+    font-size: 0.85rem;
+  }
+
+  .adm-monedas-impuestos-page .card-header {
+    padding: 18px;
+  }
+
+  .adm-monedas-impuestos-page .card-body {
+    padding: 18px;
+  }
+
+  .adm-monedas-impuestos-page .config-icon {
+    width: 43px;
+    min-width: 43px;
+    height: 43px;
+
+    font-size: 1.15rem;
+  }
+
+  .adm-monedas-impuestos-page .tax-switch-box {
+    align-items: center;
+  }
+
+  .adm-monedas-impuestos-page #previewPrecio {
+    font-size: 1.7rem;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE - MÓVIL
+===================================================== */
+
+@media (max-width: 575.98px) {
+  .adm-monedas-impuestos-page {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .adm-monedas-impuestos-page .page-header {
+    padding-bottom: 5px;
+  }
+
+  .adm-monedas-impuestos-page .page-title {
+    font-size: 1.3rem;
+  }
+
+  .adm-monedas-impuestos-page .page-title i {
+    margin-right: 5px !important;
+  }
+
+  .adm-monedas-impuestos-page .page-description {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .adm-monedas-impuestos-page .card-header {
+    padding: 16px;
+  }
+
+  .adm-monedas-impuestos-page .card-body {
+    padding: 16px;
+  }
+
+  .adm-monedas-impuestos-page .card-header h5 {
+    font-size: 0.92rem;
+  }
+
+  .adm-monedas-impuestos-page .card-header p {
+    font-size: 0.76rem;
+  }
+
+  .adm-monedas-impuestos-page .config-icon {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+
+    font-size: 1rem;
+  }
+
+  .adm-monedas-impuestos-page .form-label {
+    font-size: 0.82rem;
+  }
+
+  .adm-monedas-impuestos-page .form-control,
+  .adm-monedas-impuestos-page .form-select {
+    min-height: 42px;
+    font-size: 0.85rem;
+  }
+
+  .adm-monedas-impuestos-page .tax-switch-box {
+    padding: 14px;
+  }
+
+  .adm-monedas-impuestos-page .tax-switch-box strong {
+    font-size: 0.82rem;
+  }
+
+  .adm-monedas-impuestos-page .tax-switch-box p {
+    font-size: 0.72rem;
+  }
+
+  .adm-monedas-impuestos-page .impuesto-incluido-box {
+    padding: 13px;
+  }
+
+  .adm-monedas-impuestos-page .impuesto-incluido-box .form-check-label {
+    font-size: 0.8rem;
+  }
+
+  .adm-monedas-impuestos-page .price-preview {
+    min-height: 105px;
+  }
+
+  .adm-monedas-impuestos-page #previewPrecio {
+    font-size: 1.45rem;
+  }
+
+  .adm-monedas-impuestos-page .preview-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .adm-monedas-impuestos-page .preview-row > strong {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .adm-monedas-impuestos-page #btnRestablecer,
+  .adm-monedas-impuestos-page #btnGuardarConfiguracion {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 0.78rem;
+  }
+
+  .adm-monedas-impuestos-page .info-card .card-body {
+    padding: 16px;
+  }
+}
+
+/* =====================================================
+   PANTALLAS MUY PEQUEÑAS
+===================================================== */
+
+@media (max-width: 375px) {
+  .adm-monedas-impuestos-page .d-flex.justify-content-end {
+    flex-direction: column;
+  }
+
+  .adm-monedas-impuestos-page #btnRestablecer,
+  .adm-monedas-impuestos-page #btnGuardarConfiguracion {
+    width: 100%;
+    flex: none;
+  }
+
+  .adm-monedas-impuestos-page #previewPrecio {
+    font-size: 1.3rem;
+  }
+}
+
+/* =====================================================
+   ACCESIBILIDAD
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .adm-monedas-impuestos-page *,
+  .adm-monedas-impuestos-page *::before,
+  .adm-monedas-impuestos-page *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* =====================================================
+   MODO IMPRESIÓN
+===================================================== */
+
+@media print {
+  .adm-monedas-impuestos-page {
+    background: #ffffff !important;
+  }
+
+  .adm-monedas-impuestos-page .config-card,
+  .adm-monedas-impuestos-page .preview-card,
+  .adm-monedas-impuestos-page .info-card {
+    box-shadow: none !important;
+    border: 1px solid #dee2e6 !important;
+  }
+
+  .adm-monedas-impuestos-page #btnRestablecer,
+  .adm-monedas-impuestos-page #btnGuardarConfiguracion {
+    display: none !important;
+  }
+}

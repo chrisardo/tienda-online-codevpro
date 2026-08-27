@@ -1,0 +1,66 @@
+/*=========================================
+NOSOTROS HERO
+=========================================*/
+
+.hero-nosotros {
+  position: relative;
+}
+
+.hero-nosotros img {
+  transition: 0.4s;
+}
+
+.hero-nosotros img:hover {
+  transform: scale(1.03);
+}
+
+.hero-nosotros .btn {
+  border-radius: 50px;
+
+  padding: 12px 30px;
+}
+/*======================================================
+SERVICIOS
+======================================================*/
+
+.servicio-card {
+  transition: 0.35s;
+
+  border-radius: 20px;
+}
+
+.servicio-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15) !important;
+}
+
+.servicio-icon {
+  width: 90px;
+
+  height: 90px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #fff;
+
+  font-size: 2.4rem;
+
+  transition: 0.35s;
+}
+
+.servicio-card:hover .servicio-icon {
+  transform: rotate(10deg) scale(1.12);
+}
+
+.servicio-card h4 {
+  margin-top: 20px;
+}

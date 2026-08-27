@@ -1,0 +1,453 @@
+/*=========================================================
+=            OFERTAS FLASH
+=========================================================*/
+
+.ofertas-flash {
+  background: #f8f9fa;
+
+  overflow: hidden;
+}
+
+/*=========================================================
+=            CONTADOR
+=========================================================*/
+
+.contador-oferta {
+  display: flex;
+
+  gap: 12px;
+}
+
+.contador-oferta div {
+  width: 70px;
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  padding: 10px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contador-oferta span {
+  display: block;
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  color: #dc3545;
+}
+
+.contador-oferta small {
+  color: #6c757d;
+}
+
+/*=========================================================
+=            BANNER
+=========================================================*/
+
+.banner-ofertas {
+  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+
+  color: #fff;
+
+  border-radius: 20px;
+
+  padding: 50px;
+
+  overflow: hidden;
+}
+
+.oferta-banner-img {
+  max-height: 260px;
+
+  animation: flotar 4s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*=========================================================
+=            CARRUSEL
+=========================================================*/
+
+.ofertas-slider {
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+
+  gap: 20px;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+
+  padding: 10px 50px;
+}
+
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/*=========================================================
+=            TARJETAS
+=========================================================*/
+
+.card-oferta {
+  min-width: 290px;
+
+  max-width: 290px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  transition: 0.35s;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  background: #fff;
+
+  position: relative;
+
+  flex-shrink: 0;
+}
+
+.card-oferta:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/*=========================================================
+=            IMAGEN
+=========================================================*/
+
+.imagen-oferta {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: contain;
+
+  background: #fff;
+
+  padding: 20px;
+
+  transition: 0.35s;
+}
+
+.card-oferta:hover .imagen-oferta {
+  transform: scale(1.08);
+}
+
+/*=========================================================
+=            BADGES
+=========================================================*/
+
+.badge-descuento {
+  position: absolute;
+
+  top: 12px;
+
+  left: 12px;
+
+  background: #dc3545;
+
+  color: #fff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  padding: 6px 12px;
+
+  border-radius: 30px;
+
+  z-index: 10;
+}
+
+.badge-stock {
+  position: absolute;
+
+  top: 12px;
+
+  right: 12px;
+
+  background: #198754;
+
+  color: #fff;
+
+  font-size: 12px;
+
+  padding: 6px 10px;
+
+  border-radius: 30px;
+
+  z-index: 10;
+}
+
+/*=========================================================
+=            TEXTO
+=========================================================*/
+
+.marca {
+  color: #6c757d;
+
+  font-size: 13px;
+}
+
+.nombre-producto {
+  font-size: 18px;
+
+  min-height: 54px;
+}
+
+.nombre-producto a {
+  color: #212529;
+
+  text-decoration: none;
+}
+
+.nombre-producto a:hover {
+  color: #0d6efd;
+}
+
+.estrellas {
+  color: #ffc107;
+
+  font-size: 15px;
+}
+
+.precio-anterior {
+  color: #6c757d;
+
+  text-decoration: line-through;
+}
+
+.precio-actual {
+  color: #dc3545;
+
+  font-size: 28px;
+
+  font-weight: bold;
+}
+
+/*=========================================================
+=            STOCK
+=========================================================*/
+
+.stock-text {
+  font-size: 14px;
+}
+
+.stock-bar {
+  width: 100%;
+
+  height: 8px;
+
+  background: #e9ecef;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+}
+
+.stock-bar div {
+  height: 100%;
+
+  background: linear-gradient(90deg, #28a745, #ffc107, #dc3545);
+
+  border-radius: 30px;
+}
+
+/*=========================================================
+=            BOTONES
+=========================================================*/
+
+.btn-oferta {
+  border-radius: 30px;
+
+  font-weight: 600;
+}
+
+/*=========================================================
+=            FLECHAS
+=========================================================*/
+
+.slider-btn {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 48px;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  z-index: 100;
+
+  transition: 0.3s;
+}
+
+.slider-btn:hover {
+  background: #0d6efd;
+
+  color: #fff;
+}
+
+.slider-prev {
+  left: 0;
+}
+
+.slider-next {
+  right: 0;
+}
+
+/*=========================================================
+=            RESPONSIVE
+=========================================================*/
+
+@media (max-width: 992px) {
+  .banner-ofertas {
+    text-align: center;
+
+    padding: 35px;
+  }
+
+  .slider-wrapper {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-oferta {
+    min-width: 250px;
+
+    max-width: 250px;
+  }
+
+  .contador-oferta {
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-btn {
+    display: none;
+  }
+
+  .card-oferta {
+    min-width: 220px;
+
+    max-width: 220px;
+  }
+}
+/*=========================================================
+=            DRAG
+=========================================================*/
+
+.slider-wrapper.dragging {
+  cursor: grabbing;
+
+  user-select: none;
+}
+
+.slider-wrapper {
+  cursor: grab;
+}
+
+/*=========================================================
+=            SCROLL SUAVE
+=========================================================*/
+
+.slider-wrapper {
+  scroll-behavior: smooth;
+}
+
+/*=========================================================
+=            OCULTAR SCROLL
+=========================================================*/
+
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+/*=========================================
+ANIMACIÓN DE ENTRADA
+=========================================*/
+
+.card-oferta {
+  animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/*=========================================
+CURSOR
+=========================================*/
+
+.slider-wrapper {
+  cursor: grab;
+}
+
+.slider-wrapper:active {
+  cursor: grabbing;
+}
+
+/*=========================================
+MEJOR RENDIMIENTO
+=========================================*/
+
+.slider-wrapper {
+  will-change: scroll-position;
+}
+
+.card-oferta {
+  will-change: transform;
+}

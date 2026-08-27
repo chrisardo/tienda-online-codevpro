@@ -1,0 +1,526 @@
+/*=====================================================
+CoDevPro Technology
+css/adm_lista_productos.css
+Diseño Shopify Admin Premium
+=====================================================*/
+
+/*=====================================================
+HEADER
+=====================================================*/
+
+.page-title {
+  font-weight: 700;
+  color: #08142e;
+}
+
+.page-subtitle {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+/*=====================================================
+KPI CARDS
+=====================================================*/
+
+.kpi-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  position: relative;
+  background: #fff;
+}
+
+.kpi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.kpi-card .card-body {
+  padding: 1.4rem;
+}
+
+.kpi-card .icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.kpi-card h3 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.kpi-card small {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.kpi-primary .icon {
+  background: rgba(13, 110, 253, 0.12);
+  color: #0d6efd;
+}
+
+.kpi-success .icon {
+  background: rgba(25, 135, 84, 0.12);
+  color: #198754;
+}
+
+.kpi-danger .icon {
+  background: rgba(220, 53, 69, 0.12);
+  color: #dc3545;
+}
+
+.kpi-warning .icon {
+  background: rgba(255, 193, 7, 0.15);
+  color: #f0ad00;
+}
+
+.kpi-info .icon {
+  background: rgba(13, 202, 240, 0.12);
+  color: #0dcaf0;
+}
+
+.kpi-dark .icon {
+  background: rgba(33, 37, 41, 0.1);
+  color: #212529;
+}
+
+/*=====================================================
+FILTROS
+=====================================================*/
+
+.card-filtros {
+  border: none;
+  border-radius: 18px;
+}
+
+.card-filtros .form-control,
+.card-filtros .form-select {
+  border-radius: 12px;
+  min-height: 46px;
+}
+
+.card-filtros .form-control:focus,
+.card-filtros .form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+  border-color: #0d6efd;
+}
+
+/*=====================================================
+ACCIONES MASIVAS
+=====================================================*/
+
+.card-acciones {
+  border: none;
+  border-radius: 18px;
+}
+
+.card-acciones .btn {
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/*=====================================================
+TABLA PRODUCTOS
+=====================================================*/
+
+.card-tabla {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead {
+  background: #f8f9fa;
+}
+
+.table thead th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: #495057;
+  border-bottom: 1px solid #e9ecef;
+  white-space: nowrap;
+}
+
+.table tbody td {
+  vertical-align: middle;
+  border-color: #f1f3f5;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: #f8fbff;
+}
+
+/*=====================================================
+IMAGEN PRODUCTO
+=====================================================*/
+
+.product-thumb {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid #e9ecef;
+}
+
+.product-thumb-placeholder {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  background: #f1f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #adb5bd;
+  font-size: 1.5rem;
+}
+
+/*=====================================================
+NOMBRE PRODUCTO
+=====================================================*/
+
+.product-name {
+  font-weight: 600;
+  color: #212529;
+}
+
+.product-code {
+  font-size: 0.82rem;
+  color: #6c757d;
+}
+
+/*=====================================================
+PRECIO
+=====================================================*/
+
+.precio-venta {
+  font-weight: 700;
+  color: #198754;
+}
+
+.precio-anterior {
+  color: #6c757d;
+  text-decoration: line-through;
+  font-size: 0.85rem;
+}
+
+/*=====================================================
+STOCK
+=====================================================*/
+
+.stock-normal {
+  color: #198754;
+  font-weight: 700;
+}
+
+.stock-bajo {
+  color: #fd7e14;
+  font-weight: 700;
+}
+
+.stock-critico {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+/*=====================================================
+BADGES ESTADO
+=====================================================*/
+
+.badge-producto {
+  font-size: 0.72rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.badge-oferta {
+  background: #dc3545;
+  color: #fff;
+}
+
+.badge-destacado {
+  background: #ffc107;
+  color: #212529;
+}
+
+.badge-nuevo {
+  background: #198754;
+  color: #fff;
+}
+
+.badge-servicio {
+  background: #0dcaf0;
+  color: #fff;
+}
+
+.badge-stock-bajo {
+  background: #fd7e14;
+  color: #fff;
+}
+
+.badge-sin-stock {
+  background: #6c757d;
+  color: #fff;
+}
+
+/*=====================================================
+BOTONES ACCIONES
+=====================================================*/
+
+.btn-action {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+  transition: 0.2s;
+}
+
+.btn-action:hover {
+  transform: scale(1.08);
+}
+
+.btn-view {
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+}
+
+.btn-edit {
+  background: rgba(25, 135, 84, 0.1);
+  color: #198754;
+}
+
+.btn-copy {
+  background: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+}
+
+.btn-offer {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.btn-delete {
+  background: rgba(220, 53, 69, 0.12);
+  color: #dc3545;
+}
+
+/*=====================================================
+SIDEBAR ESTADÍSTICAS
+=====================================================*/
+
+.sidebar-card {
+  border: none;
+  border-radius: 18px;
+}
+
+.sidebar-card .card-header {
+  background: #fff;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.top-product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.top-product-item:last-child {
+  border-bottom: 0;
+}
+
+.top-product-item strong {
+  font-size: 0.92rem;
+}
+
+/*=====================================================
+ALERTA STOCK CRÍTICO
+=====================================================*/
+
+.stock-alert {
+  border-radius: 12px;
+  background: #fff4f4;
+  border: 1px solid #ffd4d4;
+  padding: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.stock-alert strong {
+  color: #dc3545;
+}
+
+/*=====================================================
+PAGINACIÓN
+=====================================================*/
+
+.pagination .page-link {
+  border-radius: 10px;
+  margin: 0 2px;
+  border: none;
+  color: #495057;
+}
+
+.pagination .page-link:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.pagination .active .page-link {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/*=====================================================
+LOADING
+=====================================================*/
+
+.loading-productos {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*=====================================================
+SCROLL TABLA
+=====================================================*/
+
+.table-responsive::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #ced4da;
+  border-radius: 50px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
+/*=====================================================
+ANIMACIONES
+=====================================================*/
+
+.fade-in {
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*=====================================================
+RESPONSIVE
+=====================================================*/
+
+@media (max-width: 991px) {
+  .kpi-card {
+    margin-bottom: 15px;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody tr {
+    display: block;
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+  }
+
+  .table tbody td {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 0.65rem;
+  }
+
+  .table tbody td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #6c757d;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-thumb,
+  .product-thumb-placeholder {
+    width: 55px;
+    height: 55px;
+  }
+
+  .btn-action {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-fluid {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .kpi-card h3 {
+    font-size: 1.3rem;
+  }
+}
+/*=====================================================*/
+.miniatura:hover{
+
+    transform:scale(1.05);
+
+    border-color:#0d6efd;
+
+}
+
+.card{
+
+    border-radius:16px;
+
+}
+
+.card-header{
+
+    border-bottom:1px solid #edf2f7;
+
+}
+
+#imagenPrincipal{
+
+    border-radius:16px;
+
+}

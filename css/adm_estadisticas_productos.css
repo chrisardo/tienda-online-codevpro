@@ -1,0 +1,765 @@
+/*=====================================================
+ CoDevPro Technology
+ Archivo: css/adm_estadisticas_productos.css
+ Módulo: Estadísticas de Productos
+ Sistema: Inventa
+=====================================================*/
+
+/*=====================================================
+ VARIABLES
+=====================================================*/
+
+.adm-estadisticas-productos {
+  --estadisticas-border: #e9ecef;
+  --estadisticas-muted: #6c757d;
+  --estadisticas-bg: #f8f9fa;
+  --estadisticas-primary: #0d6efd;
+}
+
+/*=====================================================
+ CONTENIDO
+=====================================================*/
+
+.adm-estadisticas-contenido {
+  min-width: 0;
+}
+
+/*=====================================================
+ ENCABEZADO
+=====================================================*/
+
+.estadisticas-header {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+
+  border: 1px solid var(--estadisticas-border);
+
+  border-radius: 18px;
+
+  padding: 22px 24px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.estadisticas-header-icon {
+  width: 52px;
+
+  height: 52px;
+
+  min-width: 52px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(13, 110, 253, 0.1);
+
+  color: var(--estadisticas-primary);
+
+  font-size: 1.45rem;
+}
+
+.estadisticas-titulo {
+  font-size: 1.65rem;
+
+  letter-spacing: -0.025em;
+}
+
+.estadisticas-subtitulo {
+  color: var(--estadisticas-muted);
+
+  font-size: 0.92rem;
+}
+
+/*=====================================================
+ CARDS GENERALES
+=====================================================*/
+
+.estadisticas-card {
+  border: 1px solid var(--estadisticas-border);
+
+  border-radius: 16px;
+
+  background: #fff;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.035);
+}
+
+/*=====================================================
+ FILTROS
+=====================================================*/
+
+.filtros-card {
+  overflow: hidden;
+}
+
+.filtros-header {
+  display: flex;
+
+  align-items: center;
+}
+
+.filtros-icon {
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+}
+
+.filtros-card .form-label {
+  font-size: 0.82rem;
+
+  font-weight: 600;
+
+  color: #495057;
+
+  margin-bottom: 6px;
+}
+
+.filtros-card .form-control,
+.filtros-card .form-select {
+  min-height: 42px;
+
+  border-color: #dee2e6;
+
+  border-radius: 9px;
+
+  font-size: 0.9rem;
+}
+
+.filtros-card .input-group-text {
+  background: #f8f9fa;
+
+  border-color: #dee2e6;
+
+  color: #6c757d;
+}
+
+.filtros-card .form-control:focus,
+.filtros-card .form-select:focus {
+  border-color: rgba(13, 110, 253, 0.5);
+
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.1);
+}
+
+/*=====================================================
+ TÍTULOS DE SECCIÓN
+=====================================================*/
+
+.section-title {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.section-title h5 {
+  letter-spacing: -0.01em;
+}
+
+/*=====================================================
+ KPI
+=====================================================*/
+
+.kpi-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid var(--estadisticas-border);
+
+  border-radius: 16px;
+
+  background: #fff;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.kpi-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  bottom: 0;
+
+  width: 4px;
+}
+
+.kpi-primary::before {
+  background: #0d6efd;
+}
+
+.kpi-success::before {
+  background: #198754;
+}
+
+.kpi-warning::before {
+  background: #ffc107;
+}
+
+.kpi-info::before {
+  background: #0dcaf0;
+}
+
+.kpi-card-body {
+  padding: 21px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.kpi-content {
+  min-width: 0;
+}
+
+.kpi-label {
+  display: block;
+
+  color: #6c757d;
+
+  font-size: 0.79rem;
+
+  font-weight: 600;
+
+  margin-bottom: 4px;
+}
+
+.kpi-value {
+  margin: 0;
+
+  font-size: 1.65rem;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: -0.025em;
+
+  color: #212529;
+}
+
+.kpi-description {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #8a9198;
+
+  font-size: 0.75rem;
+}
+
+.kpi-icon {
+  width: 46px;
+
+  height: 46px;
+
+  min-width: 46px;
+
+  border-radius: 13px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 1.25rem;
+}
+
+.kpi-primary .kpi-icon {
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+}
+
+.kpi-success .kpi-icon {
+  background: rgba(25, 135, 84, 0.1);
+
+  color: #198754;
+}
+
+.kpi-warning .kpi-icon {
+  background: rgba(255, 193, 7, 0.14);
+
+  color: #b88600;
+}
+
+.kpi-info .kpi-icon {
+  background: rgba(13, 202, 240, 0.12);
+
+  color: #087990;
+}
+
+/*=====================================================
+ KPI FINANCIEROS
+=====================================================*/
+
+.financial-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 20px;
+
+  background: #fff;
+
+  border: 1px solid var(--estadisticas-border);
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.035);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.financial-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.financial-icon {
+  width: 50px;
+
+  height: 50px;
+
+  min-width: 50px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 1.35rem;
+}
+
+.financial-content {
+  min-width: 0;
+}
+
+.financial-content > span {
+  display: block;
+
+  font-size: 0.79rem;
+
+  font-weight: 600;
+
+  color: #6c757d;
+}
+
+.financial-content h4 {
+  margin: 3px 0 3px;
+
+  font-size: 1.35rem;
+
+  font-weight: 700;
+
+  letter-spacing: -0.02em;
+}
+
+.financial-content small {
+  color: #8a9198;
+
+  font-size: 0.73rem;
+}
+
+/*=====================================================
+ GRÁFICOS
+=====================================================*/
+
+.chart-card {
+  background: #fff;
+
+  border: 1px solid var(--estadisticas-border);
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.035);
+
+  overflow: hidden;
+}
+
+.chart-card-header {
+  padding: 20px 22px 16px;
+
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.chart-card-header h5 {
+  font-size: 0.98rem;
+
+  font-weight: 700;
+
+  margin: 0;
+}
+
+.chart-card-header small {
+  color: #8a9198;
+
+  font-size: 0.76rem;
+}
+
+.chart-icon {
+  width: 40px;
+
+  height: 40px;
+
+  min-width: 40px;
+
+  border-radius: 11px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.chart-card-body {
+  padding: 16px 20px 20px;
+}
+
+.chart-container {
+  position: relative;
+
+  width: 100%;
+
+  height: 330px;
+}
+
+.chart-container canvas {
+  max-width: 100%;
+}
+
+/*=====================================================
+ TABLA
+=====================================================*/
+
+.products-table-card {
+  background: #fff;
+
+  border: 1px solid var(--estadisticas-border);
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.035);
+}
+
+.products-table-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 20px 22px;
+
+  border-bottom: 1px solid #edf0f2;
+}
+
+.table-title-icon {
+  width: 36px;
+
+  height: 36px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+}
+
+.products-table-header small {
+  font-size: 0.76rem;
+}
+
+.table-order {
+  display: flex;
+
+  align-items: center;
+
+  white-space: nowrap;
+}
+
+.table-order .form-select {
+  min-width: 165px;
+
+  border-radius: 8px;
+}
+
+.products-table-body {
+  width: 100%;
+}
+
+.products-table-body .table {
+  font-size: 0.84rem;
+}
+
+.products-table-body thead th {
+  background: #f8f9fa;
+
+  color: #6c757d;
+
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.025em;
+
+  white-space: nowrap;
+
+  border-bottom: 1px solid #dee2e6;
+
+  padding: 13px 14px;
+}
+
+.products-table-body tbody td {
+  padding: 14px;
+
+  border-color: #f0f1f2;
+
+  white-space: nowrap;
+}
+
+.products-table-body tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.products-table-body tbody tr:hover {
+  background-color: #f8fbff;
+}
+
+/*=====================================================
+ PAGINACIÓN
+=====================================================*/
+
+.products-table-footer {
+  display: flex;
+
+  justify-content: center;
+
+  padding: 15px 20px;
+
+  border-top: 1px solid #edf0f2;
+}
+
+.products-table-footer .pagination {
+  margin-bottom: 0;
+}
+
+.products-table-footer .page-link {
+  border-radius: 8px;
+
+  margin: 0 2px;
+
+  border-color: #dee2e6;
+}
+
+.products-table-footer .page-item.active .page-link {
+  box-shadow: 0 3px 8px rgba(13, 110, 253, 0.2);
+}
+
+/*=====================================================
+ BOTONES
+=====================================================*/
+
+.adm-estadisticas-productos .btn {
+  border-radius: 9px;
+
+  font-size: 0.86rem;
+
+  font-weight: 500;
+}
+
+.adm-estadisticas-productos .btn-primary {
+  box-shadow: 0 3px 8px rgba(13, 110, 253, 0.15);
+}
+
+/*=====================================================
+ BADGES / TEXTO
+=====================================================*/
+
+.adm-estadisticas-productos .badge {
+  font-size: 0.68rem;
+
+  font-weight: 600;
+
+  padding: 6px 9px;
+}
+
+/*=====================================================
+ RESPONSIVE
+=====================================================*/
+
+@media (max-width: 1199.98px) {
+  .estadisticas-titulo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .products-table-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .table-order {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .table-order .form-select {
+    min-width: 190px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .estadisticas-header {
+    padding: 18px;
+
+    border-radius: 14px;
+  }
+
+  .estadisticas-header-icon {
+    width: 44px;
+
+    height: 44px;
+
+    min-width: 44px;
+
+    font-size: 1.2rem;
+  }
+
+  .estadisticas-titulo {
+    font-size: 1.3rem;
+  }
+
+  .estadisticas-subtitulo {
+    font-size: 0.82rem;
+  }
+
+  .kpi-card-body {
+    padding: 18px;
+  }
+
+  .kpi-value {
+    font-size: 1.45rem;
+  }
+
+  .chart-card-header {
+    padding: 17px;
+  }
+
+  .chart-card-body {
+    padding: 12px;
+  }
+
+  .chart-container {
+    height: 280px;
+  }
+
+  .products-table-header {
+    padding: 17px;
+  }
+
+  .table-order {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 6px;
+  }
+
+  .table-order .form-select {
+    width: 100%;
+  }
+
+  .products-table-body .table {
+    min-width: 1050px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .estadisticas-header .btn {
+    flex: 1;
+  }
+
+  .estadisticas-header .d-flex {
+    width: 100%;
+  }
+
+  .financial-card {
+    padding: 17px;
+  }
+
+  .financial-icon {
+    width: 44px;
+
+    height: 44px;
+
+    min-width: 44px;
+  }
+
+  .financial-content h4 {
+    font-size: 1.15rem;
+  }
+
+  .section-title h5 {
+    font-size: 0.98rem;
+  }
+}

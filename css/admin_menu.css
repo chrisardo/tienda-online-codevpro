@@ -1,0 +1,471 @@
+/*=====================================================
+=            CoDevPro Technology
+=            Dashboard del Administrador
+=====================================================*/
+
+/*=====================================================
+=            CONFIGURACIONES GENERALES
+=====================================================*/
+
+body {
+  background: #f4f7fe;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card {
+  border: none !important;
+}
+
+.rounded-4 {
+  border-radius: 20px !important;
+}
+
+/*=====================================================
+=            SIDEBAR
+=====================================================*/
+
+.admin-sidebar {
+  width: 280px;
+  height: 100vh;
+  transition: 0.3s ease;
+  background: #08142e;
+  color: #fff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  z-index: 1100;
+}
+
+.admin-sidebar .logo {
+  padding: 25px 20px;
+}
+
+.admin-sidebar .menu-title {
+  color: #aeb8d1;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.admin-sidebar .nav-link {
+  color: #fff;
+  margin: 3px 12px;
+  padding: 14px 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.admin-sidebar .nav-link i {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.admin-sidebar .nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.admin-sidebar .nav-link.active {
+  background: linear-gradient(90deg, #2f68ff, #6c63ff);
+}
+/*=========================================
+=            SIDEBAR COLAPSADO
+=========================================*/
+
+body.sidebar-close .admin-sidebar {
+  width: 100px;
+}
+
+/* Ocultar textos */
+
+body.sidebar-close .admin-sidebar .logo h4 {
+  display: none;
+}
+
+body.sidebar-close .admin-sidebar .logo span {
+  display: none;
+}
+body.sidebar-close .badge-menu {
+  display: none;
+}
+body.sidebar-close .menu-text {
+  display: none;
+}
+body.sidebar-close .admin-sidebar .menu-title,
+body.sidebar-close .admin-sidebar .menu-arrow,
+body.sidebar-close .admin-sidebar .badge-menu {
+  display: none;
+}
+
+/* Centrar iconos */
+
+body.sidebar-close .admin-sidebar .nav-link {
+  justify-content: center;
+}
+
+body.sidebar-close .admin-sidebar .nav-link i {
+  margin-right: 0;
+}
+
+/*=========================================
+=            CONTENIDO
+=========================================*/
+
+body.sidebar-close .flex-grow-1 {
+  margin-left: 80px;
+}
+
+/*=========================================
+=            NAVBAR
+=========================================*/
+
+body.sidebar-close .admin-navbar {
+  left: 80px;
+}
+
+.badge-menu {
+  margin-left: auto;
+  border-radius: 50px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+.menu-arrow {
+  margin-left: auto;
+}
+
+.btn-logout {
+  color: #ff5470 !important;
+}
+
+/*=====================================================
+=            NAVBAR
+=====================================================*/
+
+.admin-navbar {
+  height: 80px;
+
+  background: #ffffff;
+
+  padding: 0 30px;
+
+  border-bottom: 1px solid #e9ecef;
+  transition: 0.3s ease;
+  position: fixed;
+
+  top: 0;
+  left: 280px;
+  right: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.search-box {
+  position: relative;
+  width: 500px;
+}
+
+.search-box input {
+  height: 50px;
+  border-radius: 12px;
+  padding-left: 45px;
+}
+
+.search-box i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-shortcut {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  font-size: 13px;
+}
+
+.icon-navbar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notification-badge {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  right: -4px;
+  top: -3px;
+  color: white;
+  background: red;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-admin img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/*=====================================================
+=            RESPONSIVE
+=====================================================*/
+
+@media (max-width: 991px) {
+  .admin-sidebar {
+    width: 100%;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .admin-navbar {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-dashboard {
+    min-height: auto;
+  }
+}
+/* Scroll del Sidebar */
+
+.admin-sidebar::-webkit-scrollbar {
+  width: 7px;
+}
+
+.admin-sidebar::-webkit-scrollbar-track {
+  background: #08142e;
+}
+
+.admin-sidebar::-webkit-scrollbar-thumb {
+  background: #44506d;
+  border-radius: 50px;
+}
+
+.admin-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #5c6987;
+}
+.flex-grow-1 {
+  margin-left: 280px;
+  transition: 0.3s ease;
+}
+.container-fluid {
+  padding-top: 100px !important;
+}
+/*=========================================
+=            BOTÓN SIDEBAR MÓVIL
+=========================================*/
+
+.sidebar-mobile-header {
+  display: none;
+
+  padding: 15px;
+}
+
+.btn-sidebar-mobile {
+  border: none;
+  background: transparent;
+
+  color: white;
+
+  font-size: 28px;
+}
+@media (max-width: 991px) {
+  /* Ocultar botón del Navbar */
+
+  #btnSidebar {
+    display: none;
+  }
+
+  /* Mostrar botón del Sidebar */
+
+  .sidebar-mobile-header {
+    display: block;
+  }
+}
+/*=====================================
+=            SUBMENÚ REPORTES
+=====================================*/
+
+.submenu-reportes {
+  display: none;
+
+  margin-left: 20px;
+
+  margin-bottom: 10px;
+}
+
+.submenu-link {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px 15px;
+
+  margin: 5px 10px;
+
+  color: #c9d1e8;
+
+  text-decoration: none;
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+
+  font-size: 14px;
+}
+
+.submenu-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+}
+
+.submenu-link i {
+  font-size: 16px;
+}
+.submenu-reportes.active {
+  display: block;
+}
+.menu-arrow {
+  margin-left: auto;
+
+  transition: 0.3s;
+}
+
+.menu-arrow.rotate {
+  transform: rotate(180deg);
+}
+/*=====================================
+=            SUBMENÚ PRODUCTOS
+=====================================*/
+
+.submenu-productos {
+  display: none;
+
+  margin-left: 20px;
+
+  margin-bottom: 10px;
+}
+
+.submenu-productos.active {
+  display: block;
+}
+/*=====================================
+=            SUBMENÚ CLIENTES
+=====================================*/
+
+.submenu-clientes {
+  display: none;
+
+  margin-left: 20px;
+
+  margin-bottom: 10px;
+}
+
+.submenu-clientes.active {
+  display: block;
+}
+/*=====================================
+=            SUBMENÚ EMPLEADOS
+=====================================*/
+
+.submenu-empleados {
+  display: none;
+
+  margin-left: 20px;
+
+  margin-bottom: 10px;
+}
+
+.submenu-empleados.active {
+  display: block;
+}
+/*=====================================
+=            SUBMENÚ VENTAS
+=====================================*/
+
+.submenu-ventas {
+  display: none;
+
+  margin-left: 20px;
+
+  margin-bottom: 10px;
+}
+
+.submenu-ventas.active {
+  display: block;
+}
+/*=====================================
+=            SUBMENÚ PROVEEDORES
+=====================================*/
+
+.submenu-proveedores {
+  display: none;
+
+  margin-left: 20px;
+
+  margin-bottom: 10px;
+}
+
+.submenu-proveedores.active {
+  display: block;
+}
+/*=====================================
+=            SUBMENÚ CONFIGURACIÓN
+=====================================*/
+
+.submenu-configuracion {
+  display: none;
+
+  margin-left: 20px;
+
+  margin-bottom: 10px;
+}
+
+.submenu-configuracion.active {
+  display: block;
+}
+/*=====================================
+=            SUBMENÚ CONTABILIDAD
+=====================================*/
+
+.submenu-contabilidad {
+  display: none;
+
+  margin-left: 20px;
+
+  margin-bottom: 10px;
+}
+
+.submenu-contabilidad.active {
+  display: block;
+}

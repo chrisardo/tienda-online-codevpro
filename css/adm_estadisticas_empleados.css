@@ -1,0 +1,304 @@
+/*=====================================================
+ CoDevPro Technology
+ Archivo: css/adm_estadisticas_empleados.css
+ Módulo: Estadísticas de Empleados
+ Sistema: Inventa
+=====================================================*/
+
+/*=====================================================
+ HEADER
+=====================================================*/
+
+.empleados-estadisticas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.empleados-estadisticas-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/*=====================================================
+ FILTROS
+=====================================================*/
+
+.estadisticas-section-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+}
+
+/*=====================================================
+ KPI PRINCIPALES
+=====================================================*/
+
+.estadistica-kpi-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.estadistica-kpi-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.kpi-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  font-size: 23px;
+}
+
+.kpi-icon-primary {
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+}
+
+.kpi-icon-success {
+  background: rgba(25, 135, 84, 0.1);
+  color: #198754;
+}
+
+.kpi-icon-warning {
+  background: rgba(255, 193, 7, 0.14);
+  color: #d39e00;
+}
+
+.kpi-icon-info {
+  background: rgba(13, 202, 240, 0.12);
+  color: #087990;
+}
+
+/*=====================================================
+ KPI SECUNDARIOS
+=====================================================*/
+
+.estadistica-mini-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.estadistica-mini-card:hover {
+  transform: translateY(-2px);
+}
+
+.mini-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f8f9fa;
+
+  border: 1px solid #e9ecef;
+
+  border-radius: 10px;
+
+  color: #495057;
+
+  font-size: 19px;
+}
+
+/*=====================================================
+ GRÁFICOS
+=====================================================*/
+
+.estadistica-chart-container {
+  position: relative;
+  height: 330px;
+  width: 100%;
+}
+
+.estadistica-chart-line-container {
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+
+.estadistica-doughnut-container {
+  position: relative;
+  width: 100%;
+  height: 260px;
+}
+
+.estadistica-chart-role-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+/*=====================================================
+ LEYENDAS
+=====================================================*/
+
+.estadistica-leyenda-dot {
+  display: inline-block;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  margin-right: 5px;
+}
+
+/*=====================================================
+ TABLA RANKING
+=====================================================*/
+
+#tablaRankingEmpleados thead th {
+  font-size: 13px;
+  font-weight: 600;
+  color: #495057;
+  white-space: nowrap;
+}
+
+#tablaRankingEmpleados tbody td {
+  font-size: 14px;
+}
+
+#tablaRankingEmpleados tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+#tablaRankingEmpleados tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/*=====================================================
+ TABLA VACÍA
+=====================================================*/
+
+.estadistica-tabla-vacia {
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #6c757d;
+
+  gap: 8px;
+}
+
+.estadistica-tabla-vacia i {
+  font-size: 32px;
+  opacity: 0.45;
+}
+
+.estadistica-tabla-vacia span {
+  font-size: 14px;
+}
+
+/*=====================================================
+ RESUMEN ECONÓMICO
+=====================================================*/
+
+.estadistica-resumen-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.estadistica-resumen-card:hover {
+  transform: translateY(-2px);
+}
+
+.resumen-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 20px;
+}
+
+.resumen-warning {
+  background: rgba(255, 193, 7, 0.12);
+  color: #d39e00;
+}
+
+.resumen-success {
+  background: rgba(25, 135, 84, 0.1);
+  color: #198754;
+}
+
+.resumen-danger {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+/*=====================================================
+ RESPONSIVE
+=====================================================*/
+
+@media (max-width: 991.98px) {
+  .empleados-estadisticas-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .estadistica-chart-container {
+    height: 280px;
+  }
+
+  .estadistica-chart-line-container {
+    height: 280px;
+  }
+
+  .estadistica-doughnut-container {
+    height: 230px;
+  }
+
+  .estadistica-chart-role-container {
+    height: 260px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  main.container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .empleados-estadisticas-header h2 {
+    font-size: 1.35rem;
+  }
+
+  .estadistica-kpi-card h3 {
+    font-size: 1.45rem;
+  }
+}

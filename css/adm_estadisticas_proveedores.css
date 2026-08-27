@@ -1,0 +1,91 @@
+/*=====================================================
+ CoDevPro Technology
+ Archivo: css/adm_estadisticas_proveedores.css
+ Módulo: Estadísticas de Proveedores
+ Sistema: Inventa
+=====================================================*/
+
+/*=====================================================
+ TARJETAS KPI
+=====================================================*/
+
+#kpiTotalProveedores,
+#kpiProveedoresActivos,
+#kpiProductosProveedores,
+#kpiValorInventarioProveedores,
+#kpiUnidadesVendidasProveedor,
+#kpiVentasProveedores,
+#kpiCostoProductosProveedores,
+#kpiMargenProveedores {
+  letter-spacing: -0.5px;
+}
+
+/*=====================================================
+ GRÁFICOS
+=====================================================*/
+
+#graficoVentasProveedores,
+#graficoDistribucionProveedores,
+#graficoEvolucionProveedores {
+  max-width: 100%;
+}
+
+/*=====================================================
+ TABLAS
+=====================================================*/
+
+#tablaRankingProveedores td,
+#tablaRankingProveedores th,
+#tablaProductosMasVendidosProveedor td,
+#tablaProductosMasVendidosProveedor th,
+#tablaGastosProveedores td,
+#tablaGastosProveedores th {
+  white-space: nowrap;
+}
+
+#tablaRankingProveedores tbody tr,
+#tablaProductosMasVendidosProveedor tbody tr,
+#tablaGastosProveedores tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+#tablaRankingProveedores tbody tr:hover,
+#tablaProductosMasVendidosProveedor tbody tr:hover,
+#tablaGastosProveedores tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.035);
+}
+
+/*=====================================================
+ FILTROS
+=====================================================*/
+
+#filtroProveedorEstadisticas,
+#filtroEstadoProveedorEstadisticas,
+#filtroFechaInicioProveedor,
+#filtroFechaFinProveedor {
+  min-height: 42px;
+}
+
+/*=====================================================
+ RESPONSIVE
+=====================================================*/
+
+@media (max-width: 767.98px) {
+  main.container-fluid {
+    padding-left: 1rem !important;
+
+    padding-right: 1rem !important;
+  }
+
+  .card-body {
+    padding: 1rem !important;
+  }
+}
+
+/*=====================================================
+ ANIMACIÓN CARGA
+=====================================================*/
+
+#estadoCargaEstadisticasProveedores {
+  transition: opacity 0.2s ease;
+}

@@ -1,0 +1,385 @@
+/*=====================================================
+CoDevPro Technology
+css/ofertas_pagina.css
+=====================================================*/
+
+body {
+  background: #f5f7fb;
+}
+
+/*=====================================================
+BANNER
+=====================================================*/
+
+.ofertas-banner {
+  background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+  color: #fff;
+  padding: 70px 0;
+  margin-bottom: 30px;
+}
+
+.ofertas-banner h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.ofertas-banner p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/*=====================================================
+BREADCRUMB
+=====================================================*/
+
+.breadcrumb {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+/*=====================================================
+FILTROS
+=====================================================*/
+
+.filtro-box {
+  background: #fff;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 25px;
+}
+
+#ordenarProductos {
+  border-radius: 10px;
+}
+
+#vistaGrid,
+#vistaLista {
+  width: 42px;
+
+  height: 42px;
+}
+
+/*=====================================================
+CONTADOR
+=====================================================*/
+
+#totalProductos {
+  font-weight: 700;
+
+  color: #444;
+}
+
+/*=====================================================
+GRID
+=====================================================*/
+
+#contenedorOfertas {
+  row-gap: 25px;
+}
+
+/*=====================================================
+CARD PRODUCTO
+=====================================================*/
+
+.card-oferta {
+  background: #fff;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+  height: 100%;
+
+  position: relative;
+}
+
+.card-oferta:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+}
+
+/*=====================================================
+IMAGEN
+=====================================================*/
+
+.card-oferta .imagen {
+  height: 240px;
+
+  overflow: hidden;
+
+  background: #fff;
+}
+
+.card-oferta img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  transition: 0.35s;
+}
+
+.card-oferta:hover img {
+  transform: scale(1.06);
+}
+
+/*=====================================================
+DESCUENTO
+=====================================================*/
+
+.badge-descuento {
+  position: absolute;
+
+  top: 15px;
+
+  left: 15px;
+
+  background: #dc3545;
+
+  color: #fff;
+
+  padding: 8px 12px;
+
+  border-radius: 30px;
+
+  font-size: 0.9rem;
+
+  font-weight: bold;
+
+  z-index: 10;
+}
+
+/*=====================================================
+CUERPO
+=====================================================*/
+
+.card-body {
+  padding: 18px;
+}
+
+.producto-marca {
+  font-size: 0.82rem;
+
+  color: #777;
+}
+
+.producto-nombre {
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  color: #222;
+
+  height: 52px;
+
+  overflow: hidden;
+}
+
+.precio-anterior {
+  color: #999;
+
+  text-decoration: line-through;
+
+  font-size: 0.95rem;
+}
+
+.precio-actual {
+  color: #198754;
+
+  font-size: 1.45rem;
+
+  font-weight: bold;
+}
+
+/*=====================================================
+STOCK
+=====================================================*/
+
+.stock {
+  margin-top: 8px;
+
+  font-size: 0.88rem;
+
+  color: #555;
+}
+
+/*=====================================================
+BOTONES
+=====================================================*/
+
+.card-footer {
+  background: none;
+
+  border: none;
+
+  padding: 18px;
+}
+
+.btn-carrito {
+  width: 100%;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+}
+
+.btn-vista {
+  width: 48px;
+
+  border-radius: 12px;
+}
+
+/*=====================================================
+BOTON CARGAR MAS
+=====================================================*/
+
+#btnCargarMas {
+  border-radius: 40px;
+
+  padding: 13px 35px;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  margin-top: 15px;
+}
+
+/*=====================================================
+MODO LISTA
+=====================================================*/
+
+.lista .card-oferta {
+  display: flex;
+
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.lista .imagen {
+  width: 260px;
+
+  height: 220px;
+}
+
+.lista .card-body {
+  flex: 1;
+}
+
+.lista .card-footer {
+  width: 220px;
+}
+
+/*=====================================================
+ANIMACION
+=====================================================*/
+
+.fade-card {
+  animation: fadeCard 0.5s ease;
+}
+
+@keyframes fadeCard {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/*=====================================================
+SIN PRODUCTOS
+=====================================================*/
+
+.sin-productos {
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.sin-productos i {
+  font-size: 75px;
+
+  color: #bbb;
+}
+
+.sin-productos h3 {
+  margin-top: 15px;
+
+  color: #666;
+}
+
+/*=====================================================
+RESPONSIVE
+=====================================================*/
+
+@media (max-width: 992px) {
+  .ofertas-banner h1 {
+    font-size: 2.1rem;
+  }
+
+  .lista .card-oferta {
+    flex-direction: column;
+  }
+
+  .lista .imagen {
+    width: 100%;
+  }
+
+  .lista .card-footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ofertas-banner {
+    padding: 45px 0;
+  }
+
+  .ofertas-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  #totalProductos {
+    text-align: center;
+
+    margin-bottom: 15px;
+  }
+
+  #vistaGrid,
+  #vistaLista {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-oferta .imagen {
+    height: 190px;
+  }
+
+  .precio-actual {
+    font-size: 1.25rem;
+  }
+}

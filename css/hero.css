@@ -1,0 +1,163 @@
+/* HERO */
+
+.hero {
+  background: linear-gradient(135deg, #07142c, #0b2556, #07142c);
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: rgba(13, 110, 253, 0.18);
+  top: -250px;
+  right: -150px;
+  filter: blur(10px);
+}
+
+.hero .badge-premium {
+  background: #198754;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero h1 span {
+  color: #28d146;
+}
+
+.hero p {
+  color: #d8d8d8;
+  font-size: 1.2rem;
+}
+
+.hero-product {
+  max-width: 100%;
+  animation: flotar 5s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.offer-card {
+  position: absolute;
+
+  top: 30px;
+
+  right: 30px;
+
+  background: #0d6efd;
+
+  color: white;
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  width: 220px;
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.offer-card h2 {
+  font-size: 4rem;
+
+  font-weight: bold;
+
+  color: #38ff57;
+}
+
+.glow {
+  position: absolute;
+
+  bottom: -120px;
+
+  right: 180px;
+
+  width: 500px;
+
+  height: 180px;
+
+  background: #0d6efd;
+
+  border-radius: 50%;
+
+  filter: blur(80px);
+
+  opacity: 0.5;
+}
+
+@media (max-width: 991px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .offer-card {
+    position: relative;
+
+    right: auto;
+
+    top: auto;
+
+    margin-top: 20px;
+
+    width: 100%;
+  }
+}
+
+.checkout-resumen {
+  position: sticky;
+
+  top: 110px;
+
+  z-index: 10;
+}
+/*======================================================
+=            NOTIFICACIONES
+======================================================*/
+
+#contenedorNotificaciones {
+  max-height: 420px;
+
+  overflow-y: auto;
+
+  overflow-x: hidden;
+}
+
+/* Scroll bonito */
+
+#contenedorNotificaciones::-webkit-scrollbar {
+  width: 6px;
+}
+
+#contenedorNotificaciones::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+
+  border-radius: 10px;
+}
+
+#contenedorNotificaciones::-webkit-scrollbar-track {
+  background: transparent;
+}

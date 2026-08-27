@@ -1,0 +1,314 @@
+/*=====================================================
+=            CoDevPro Technology
+=            Dashboard del Administrador
+css/admin_dashboard.css
+=====================================================*/
+
+/*=====================================================
+=            CONFIGURACIONES GENERALES
+=====================================================*/
+
+body {
+  background: #f4f7fe;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card {
+  border: none !important;
+}
+
+.rounded-4 {
+  border-radius: 20px !important;
+}
+
+/*=====================================================
+=            TARJETAS ESTADÍSTICAS
+=====================================================*/
+
+.card-dashboard {
+  border-radius: 20px;
+  color: white;
+  min-height: 170px;
+  overflow: hidden;
+  position: relative;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  color: #333;
+}
+
+.bg-pedidos {
+  background: linear-gradient(135deg, #1858ff, #4d8cff);
+}
+
+.bg-ventas {
+  background: linear-gradient(135deg, #00a94f, #37d67a);
+}
+
+.bg-clientes {
+  background: linear-gradient(135deg, #6f2bff, #a855f7);
+}
+
+.bg-productos {
+  background: linear-gradient(135deg, #ff9500, #fdba12);
+}
+
+.bg-testimonios {
+  background: linear-gradient(135deg, #e91e63, #ff4f81);
+}
+
+.bg-favoritos {
+  background: linear-gradient(135deg, #00bcd4, #26c6da);
+}
+
+/*=====================================================
+=            ALERTAS
+=====================================================*/
+
+.alerta-item {
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #eeeeee;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.alerta-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.alerta-icono {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*=====================================================
+=            ACCIONES RÁPIDAS
+=====================================================*/
+
+.card-accion {
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card-accion:hover {
+  transform: translateY(-5px);
+}
+
+.icono-accion {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/*=====================================================
+=            PRODUCTOS MÁS VENDIDOS
+=====================================================*/
+
+.producto-top {
+  padding: 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.producto-top:hover {
+  background: #f8f9fa;
+}
+
+.producto-top img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/*=====================================================
+=            ACTIVIDAD RECIENTE
+=====================================================*/
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 30px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+
+  left: 20px;
+  top: 45px;
+
+  width: 2px;
+  height: 45px;
+
+  background: #e9ecef;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+/*=====================================================
+=            CALENDARIO
+=====================================================*/
+
+#calendarioDashboard {
+  border-radius: 15px;
+}
+
+.evento-item {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.evento-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/*=====================================================
+=            PROMOCIONES
+=====================================================*/
+
+.card-promocion {
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.card-promocion:hover {
+  transform: translateY(-5px);
+}
+
+.container-fluid {
+  padding-top: 100px !important;
+}
+/*=====================================================
+=            BIENVENIDA
+=====================================================*/
+
+.welcome-icon {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+
+  color: white;
+
+  font-size: 70px;
+
+  box-shadow: 0 15px 40px rgba(13, 110, 253, 0.25);
+}
+/*=====================================================
+=            LOGO DE LA EMPRESA
+=====================================================*/
+
+.logo-empresa {
+  width: 150px;
+  height: 150px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  border: 5px solid #f4f7fe;
+}
+
+.logo-empresa img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.logo-empresa {
+  width: 160px;
+  height: 160px;
+
+  padding: 6px;
+
+  border-radius: 50%;
+
+  margin: auto;
+
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+
+  box-shadow: 0 15px 40px rgba(13, 110, 253, 0.2);
+}
+
+.logo-empresa img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  background: #fff;
+}
+.bg-info {
+  background: linear-gradient(135deg, #00b4d8, #48cae4);
+}
+
+.bg-dark {
+  background: linear-gradient(135deg, #212529, #495057);
+}

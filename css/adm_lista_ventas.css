@@ -1,0 +1,57 @@
+.timeline-pedido {
+  position: relative;
+  padding-left: 35px;
+}
+
+.timeline-pedido::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #dee2e6;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0d6efd;
+}
+
+.timeline-item.success::before {
+  background: #198754;
+}
+
+.timeline-item.danger::before {
+  background: #dc3545;
+}
+
+.timeline-item.warning::before {
+  background: #ffc107;
+}
+
+.card-shopify {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.producto-resumen {
+  border-bottom: 1px solid #ececec;
+  padding: 12px 0;
+}
+
+.producto-resumen:last-child {
+  border-bottom: none;
+}

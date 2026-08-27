@@ -1,0 +1,745 @@
+/*=====================================================
+ CoDevPro Technology
+ Archivo: css/adm_lista_proveedores.css
+ Módulo: Lista de Proveedores
+ Sistema: Inventa
+=====================================================*/
+
+/*=====================================================
+ ENCABEZADO
+=====================================================*/
+
+.adm-proveedores-header {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 24px;
+}
+
+.adm-proveedores-breadcrumb {
+  font-size: 0.82rem;
+
+  font-weight: 600;
+
+  color: #6c757d;
+}
+
+.adm-proveedores-title-icon {
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+
+  font-size: 1.35rem;
+
+  flex-shrink: 0;
+}
+
+.adm-proveedores-title {
+  font-size: 1.75rem;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.adm-proveedores-subtitle {
+  color: #6c757d;
+
+  font-size: 0.92rem;
+}
+
+.adm-proveedores-header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+/*=====================================================
+ KPI
+=====================================================*/
+
+.adm-proveedor-kpi {
+  border: 1px solid #e9ecef;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.adm-proveedor-kpi:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+}
+
+.adm-proveedor-kpi .card-body {
+  padding: 1.25rem;
+}
+
+.adm-proveedor-kpi-label {
+  display: block;
+
+  color: #6c757d;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+
+  margin-bottom: 5px;
+}
+
+.adm-proveedor-kpi-value {
+  margin: 0;
+
+  font-size: 1.75rem;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.adm-proveedor-kpi-description {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 0.75rem;
+
+  color: #8a8f98;
+}
+
+.adm-proveedor-kpi-icon {
+  width: 46px;
+
+  height: 46px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(108, 117, 125, 0.1);
+
+  color: #6c757d;
+
+  font-size: 1.15rem;
+}
+
+.adm-proveedor-kpi-icon-success {
+  background: rgba(25, 135, 84, 0.1);
+
+  color: #198754;
+}
+
+.adm-proveedor-kpi-icon-warning {
+  background: rgba(255, 193, 7, 0.14);
+
+  color: #cc9a00;
+}
+
+.adm-proveedor-kpi-icon-primary {
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+}
+
+/*=====================================================
+ TARJETAS
+=====================================================*/
+
+.adm-proveedores-card {
+  border: 1px solid #e9ecef;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+
+  overflow: hidden;
+}
+
+.adm-proveedores-card-header {
+  background: #ffffff;
+
+  border-bottom: 1px solid #edf0f2;
+
+  padding: 1rem 1.25rem;
+}
+
+.adm-proveedores-section-icon {
+  width: 38px;
+
+  height: 38px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: rgba(13, 110, 253, 0.09);
+
+  color: #0d6efd;
+
+  flex-shrink: 0;
+}
+
+.adm-proveedores-card .card-body {
+  padding: 1.25rem;
+}
+
+/*=====================================================
+ FILTROS
+=====================================================*/
+
+#buscarProveedor {
+  min-height: 42px;
+}
+
+#filtroEstadoProveedor,
+#filtroDepartamentoProveedor,
+#filtroFechaProveedor {
+  min-height: 42px;
+}
+
+#btnLimpiarFiltrosProveedor {
+  min-height: 42px;
+}
+
+.adm-proveedores-card .form-label {
+  color: #343a40;
+
+  font-size: 0.84rem;
+}
+
+/*=====================================================
+ TABLA
+=====================================================*/
+
+.adm-proveedores-table {
+  min-width: 1050px;
+}
+
+.adm-proveedores-table thead th {
+  background: #f8f9fa;
+
+  border-bottom: 1px solid #dee2e6;
+
+  color: #6c757d;
+
+  font-size: 0.74rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.025em;
+
+  white-space: nowrap;
+
+  padding-top: 0.9rem;
+
+  padding-bottom: 0.9rem;
+}
+
+.adm-proveedores-table tbody td {
+  padding-top: 0.95rem;
+
+  padding-bottom: 0.95rem;
+
+  border-bottom: 1px solid #f0f1f2;
+
+  font-size: 0.86rem;
+}
+
+.adm-proveedores-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/*=====================================================
+ PROVEEDOR EN TABLA
+=====================================================*/
+
+.proveedor-lista-imagen {
+  width: 46px;
+
+  height: 46px;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: #f1f3f5;
+
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.proveedor-lista-imagen img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.proveedor-lista-placeholder {
+  color: #adb5bd;
+
+  font-size: 1.2rem;
+}
+
+.proveedor-lista-nombre {
+  font-weight: 600;
+
+  color: #212529;
+
+  margin-bottom: 2px;
+}
+
+.proveedor-lista-email {
+  font-size: 0.75rem;
+
+  color: #8a8f98;
+}
+
+/*=====================================================
+ RUC
+=====================================================*/
+
+.proveedor-ruc {
+  font-family: monospace;
+
+  font-size: 0.84rem;
+
+  font-weight: 600;
+
+  color: #495057;
+}
+
+/*=====================================================
+ CONTACTO
+=====================================================*/
+
+.proveedor-contacto {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.proveedor-contacto-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #495057;
+
+  font-size: 0.78rem;
+}
+
+.proveedor-contacto-item i {
+  color: #6c757d;
+
+  width: 14px;
+}
+
+/*=====================================================
+ UBICACIÓN
+=====================================================*/
+
+.proveedor-ubicacion {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 7px;
+}
+
+.proveedor-ubicacion i {
+  color: #0d6efd;
+
+  margin-top: 2px;
+}
+
+.proveedor-ubicacion-texto {
+  font-size: 0.78rem;
+
+  color: #495057;
+}
+
+/*=====================================================
+ ESTADO
+=====================================================*/
+
+.proveedor-estado {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  font-size: 0.72rem;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.proveedor-estado::before {
+  content: "";
+
+  width: 6px;
+
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+}
+
+.proveedor-estado-activo {
+  color: #198754;
+
+  background: rgba(25, 135, 84, 0.1);
+}
+
+.proveedor-estado-inactivo {
+  color: #dc3545;
+
+  background: rgba(220, 53, 69, 0.1);
+}
+
+/*=====================================================
+ ACCIONES
+=====================================================*/
+
+.proveedor-acciones {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 5px;
+}
+
+.proveedor-accion-btn {
+  width: 34px;
+
+  height: 34px;
+
+  padding: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 9px;
+}
+
+.proveedor-accion-btn:hover {
+  transform: translateY(-1px);
+}
+
+/*=====================================================
+ ESTADO VACÍO
+=====================================================*/
+
+.proveedores-empty {
+  padding: 60px 20px;
+
+  text-align: center;
+}
+
+.proveedores-empty-icon {
+  width: 70px;
+
+  height: 70px;
+
+  margin: 0 auto 15px;
+
+  border-radius: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #f1f3f5;
+
+  color: #adb5bd;
+
+  font-size: 1.8rem;
+}
+
+.proveedores-empty-title {
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  color: #343a40;
+
+  margin-bottom: 5px;
+}
+
+.proveedores-empty-text {
+  color: #8a8f98;
+
+  font-size: 0.84rem;
+
+  margin-bottom: 0;
+}
+
+/*=====================================================
+ LOADING
+=====================================================*/
+
+.proveedores-loading {
+  padding: 60px 20px;
+
+  text-align: center;
+}
+
+.proveedores-loading-text {
+  margin-top: 12px;
+
+  color: #6c757d;
+
+  font-size: 0.84rem;
+}
+
+/*=====================================================
+ PAGINACIÓN
+=====================================================*/
+
+.adm-proveedores-card .pagination {
+  margin-bottom: 0;
+}
+
+.adm-proveedores-card .page-link {
+  border-radius: 8px;
+
+  margin: 0 2px;
+
+  border: 1px solid #dee2e6;
+
+  color: #495057;
+}
+
+.adm-proveedores-card .page-item.active .page-link {
+  background-color: #0d6efd;
+
+  border-color: #0d6efd;
+
+  color: #ffffff;
+}
+
+.adm-proveedores-card .page-link:hover {
+  background-color: #f1f3f5;
+}
+
+/*=====================================================
+ RESPONSIVE
+=====================================================*/
+
+@media (max-width: 991.98px) {
+  .adm-proveedores-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .adm-proveedores-header-actions {
+    width: 100%;
+  }
+
+  .adm-proveedores-header-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .adm-proveedores-title {
+    font-size: 1.45rem;
+  }
+
+  .adm-proveedores-title-icon {
+    width: 45px;
+
+    height: 45px;
+
+    font-size: 1.15rem;
+  }
+
+  .adm-proveedores-subtitle {
+    font-size: 0.82rem;
+  }
+
+  .adm-proveedor-kpi-value {
+    font-size: 1.5rem;
+  }
+
+  .adm-proveedores-card-header {
+    padding: 0.9rem 1rem;
+  }
+
+  .adm-proveedores-card .card-body {
+    padding: 1rem;
+  }
+}
+/*=====================================================
+ MODAL EDITAR PROVEEDOR
+=====================================================*/
+
+.modal-editar-proveedor {
+  max-height: calc(100vh - 2rem);
+}
+
+/*=====================================================
+ CONTENIDO DEL MODAL
+=====================================================*/
+
+.modal-editar-proveedor .modal-content {
+  max-height: calc(100vh - 2rem);
+
+  border-radius: 16px;
+
+  overflow: hidden;
+}
+
+/*=====================================================
+ HEADER DEL MODAL
+=====================================================*/
+
+.modal-editar-proveedor .modal-header {
+  flex-shrink: 0;
+
+  padding: 1rem 1.25rem;
+}
+
+/*=====================================================
+ BODY DEL MODAL
+=====================================================*/
+
+.modal-editar-proveedor .modal-body {
+  overflow-y: auto;
+
+  overflow-x: hidden;
+
+  max-height: calc(100vh - 180px);
+
+  scrollbar-width: thin;
+
+  scrollbar-color: #adb5bd transparent;
+}
+
+/*=====================================================
+ SCROLLBAR CHROME / EDGE
+=====================================================*/
+
+.modal-editar-proveedor .modal-body::-webkit-scrollbar {
+  width: 7px;
+}
+
+.modal-editar-proveedor .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-editar-proveedor .modal-body::-webkit-scrollbar-thumb {
+  background-color: #adb5bd;
+
+  border-radius: 10px;
+}
+
+.modal-editar-proveedor .modal-body::-webkit-scrollbar-thumb:hover {
+  background-color: #868e96;
+}
+
+/*=====================================================
+ FOOTER
+=====================================================*/
+
+.modal-editar-proveedor .modal-footer {
+  flex-shrink: 0;
+
+  padding: 0.9rem 1.25rem;
+}
+
+/*=====================================================
+ RESPONSIVE
+=====================================================*/
+
+@media (max-width: 575.98px) {
+  .modal-editar-proveedor {
+    margin: 0.75rem;
+  }
+
+  .modal-editar-proveedor .modal-content {
+    max-height: calc(100vh - 1.5rem);
+
+    border-radius: 14px;
+  }
+
+  .modal-editar-proveedor .modal-header {
+    padding: 0.9rem 1rem;
+  }
+
+  .modal-editar-proveedor .modal-body {
+    padding: 1rem !important;
+
+    max-height: calc(100vh - 165px);
+  }
+
+  .modal-editar-proveedor .modal-footer {
+    padding: 0.75rem 1rem;
+  }
+}

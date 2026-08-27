@@ -1,0 +1,81 @@
+.flash-sale {
+  background: linear-gradient(135deg, #0d6efd, #052c65);
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.flash-sale::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  top: -150px;
+  right: -120px;
+}
+
+.flash-sale::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  bottom: -100px;
+  left: -80px;
+}
+
+.count-box {
+  min-width: 70px;
+  background: #fff;
+  color: #0d6efd;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.count-box h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.count-box small {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.offer-badge {
+  background: #ffc107;
+  color: #000;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 8px 18px;
+}
+
+.flash-img {
+  max-height: 300px;
+  animation: flotar 5s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .flash-img {
+    margin-top: 30px;
+
+    max-height: 220px;
+  }
+}

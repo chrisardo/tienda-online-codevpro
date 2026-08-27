@@ -1,0 +1,466 @@
+/*======================================================
+ESTILO GENERAL
+======================================================*/
+
+.detalle-pedido-page {
+  background: #f5f7fb;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.detalle-pedido-card {
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #212529;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  font-size: 0.88rem;
+}
+
+/*======================================================
+HEADER
+======================================================*/
+
+.pedido-header {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 55%, #084298 100%);
+}
+
+.pedido-header::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  right: -80px;
+  top: -130px;
+}
+
+.pedido-header::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  left: 35%;
+  bottom: -120px;
+}
+
+.pedido-header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.pedido-icon {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.pedido-numero {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.pedido-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pedido-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 0.82rem;
+}
+
+/*======================================================
+ICONOS
+======================================================*/
+
+.detalle-icon-box {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+/*======================================================
+ESTADO
+======================================================*/
+
+.estado-card {
+  border: 1px solid #edf0f4;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.estado-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*======================================================
+SEGUIMIENTO
+======================================================*/
+
+.seguimiento-wrapper {
+  position: relative;
+  overflow-x: auto;
+  padding: 12px 0 20px;
+}
+
+.seguimiento-linea {
+  position: absolute;
+  top: 40px;
+  left: 8%;
+  right: 8%;
+  height: 4px;
+  background: #e9ecef;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.seguimiento-item {
+  position: relative;
+  z-index: 1;
+  min-width: 125px;
+}
+
+.seguimiento-circulo {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #dee2e6;
+  color: #adb5bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seguimiento-item.completado .seguimiento-circulo {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+.seguimiento-item.actual .seguimiento-circulo {
+  box-shadow: 0 0 0 6px rgba(13, 110, 253, 0.12);
+}
+
+.seguimiento-texto {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/*======================================================
+INFORMACIÓN
+======================================================*/
+
+.info-item {
+  height: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  background: #f8f9fa;
+}
+
+.info-item-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.info-item-value {
+  font-weight: 600;
+  color: #212529;
+  word-break: break-word;
+}
+
+.direccion-card {
+  padding: 17px;
+  border-radius: 15px;
+  background: #f8f9fa;
+}
+
+/*======================================================
+REPARTIDOR
+======================================================*/
+
+.repartidor-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.repartidor-banner {
+  padding: 24px;
+  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+  border-bottom: 1px solid #e9eff7;
+}
+
+.repartidor-card {
+  border: 1px solid #e7ebf0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.repartidor-profile {
+  padding: 25px;
+}
+
+.repartidor-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.repartidor-avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e9ecef, #dee2e6);
+  color: #6c757d;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.repartidor-nombre {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #212529;
+}
+
+.repartidor-rol {
+  color: #6c757d;
+  font-size: 0.88rem;
+}
+
+.repartidor-estado {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.repartidor-dato {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  border-radius: 13px;
+  background: #f8f9fa;
+}
+
+.repartidor-dato-icono {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  flex-shrink: 0;
+}
+
+.repartidor-dato-label {
+  display: block;
+  font-size: 0.72rem;
+  color: #6c757d;
+}
+
+.repartidor-dato-valor {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.repartidor-contacto {
+  padding: 0 25px 25px;
+}
+
+.btn-whatsapp {
+  min-height: 46px;
+}
+
+.repartidor-pendiente {
+  padding: 20px;
+  border: 1px dashed #ced4da;
+  border-radius: 17px;
+  background: #f8f9fa;
+}
+
+/*======================================================
+AVISO CONTACTO EMPRESA
+======================================================*/
+
+.contacto-empresa {
+  border-radius: 15px;
+  padding: 16px;
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+}
+
+.contacto-empresa-icono {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 193, 7, 0.15);
+  color: #856404;
+  flex-shrink: 0;
+}
+
+/*======================================================
+PRODUCTOS
+======================================================*/
+
+.producto-card {
+  border: 1px solid #e9ecef;
+  border-radius: 15px;
+  padding: 15px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.06);
+}
+
+.producto-imagen {
+  width: 82px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 13px;
+  background: #f8f9fa;
+  flex-shrink: 0;
+}
+
+.producto-placeholder {
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #f8f9fa;
+  flex-shrink: 0;
+}
+
+/*======================================================
+RESUMEN
+======================================================*/
+
+.resumen-total {
+  padding: 22px;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #f8f9fa, #eef5ff);
+}
+
+.total-final {
+  font-size: 1.85rem;
+}
+
+/*======================================================
+ACCIONES
+======================================================*/
+
+.acciones-pedido {
+  position: sticky;
+  bottom: 15px;
+  z-index: 20;
+  border-radius: 16px;
+}
+
+/*======================================================
+RESPONSIVE
+======================================================*/
+
+@media (max-width: 767.98px) {
+  .pedido-numero {
+    font-size: 1.55rem;
+  }
+
+  .pedido-header {
+    text-align: center;
+  }
+
+  .pedido-meta {
+    justify-content: center;
+  }
+
+  .seguimiento-linea {
+    left: 10%;
+    right: 10%;
+  }
+
+  .seguimiento-item {
+    min-width: 105px;
+  }
+
+  .seguimiento-circulo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .producto-imagen,
+  .producto-placeholder {
+    width: 68px;
+    height: 68px;
+  }
+
+  .repartidor-profile {
+    text-align: center;
+  }
+
+  .repartidor-contacto {
+    padding: 0 18px 18px;
+  }
+
+  .acciones-pedido {
+    position: static;
+  }
+}

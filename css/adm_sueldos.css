@@ -1,0 +1,804 @@
+/*=====================================================
+CoDevPro Technology
+Archivo: css/adm_sueldos.css
+Módulo: Sueldos y Pagos
+=====================================================*/
+
+/*=====================================================
+CONTENEDOR PRINCIPAL
+=====================================================*/
+
+.adm-sueldos-page {
+  min-height: calc(100vh - 70px);
+}
+
+/*=====================================================
+CABECERA
+=====================================================*/
+
+.sueldos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sueldos-header h2 {
+  color: #212529;
+  letter-spacing: -0.3px;
+}
+
+.sueldos-header-icon {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+
+  font-size: 21px;
+}
+
+/*=====================================================
+KPI CARDS
+=====================================================*/
+
+.kpi-sueldo-card {
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+.kpi-sueldo-card:hover {
+  transform: translateY(-2px);
+}
+
+.kpi-label {
+  color: #6c757d;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.kpi-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 21px;
+}
+
+.kpi-icon-primary {
+  color: #0d6efd;
+  background: rgba(13, 110, 253, 0.1);
+}
+
+.kpi-icon-success {
+  color: #198754;
+  background: rgba(25, 135, 84, 0.1);
+}
+
+.kpi-icon-warning {
+  color: #f59f00;
+  background: rgba(255, 193, 7, 0.13);
+}
+
+.kpi-icon-info {
+  color: #0dcaf0;
+  background: rgba(13, 202, 240, 0.12);
+}
+
+/*=====================================================
+PANEL PRINCIPAL
+=====================================================*/
+
+.sueldos-main-card {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.sueldos-main-card .card-body {
+  background-color: #fff;
+}
+
+/*=====================================================
+FILTROS
+=====================================================*/
+
+#buscarSueldo {
+  min-height: 38px;
+}
+
+#filtroEstadoSueldo,
+#filtroTipoSueldo,
+#filtroFechaSueldo {
+  min-height: 38px;
+}
+
+#filtroFechaSueldo {
+  background-color: #fff;
+}
+
+#filtroFechaSueldo:focus {
+  background-color: #fff;
+}
+
+.form-label {
+  font-size: 0.84rem;
+  margin-bottom: 6px;
+}
+
+.input-group-text {
+  border-color: #dee2e6;
+}
+
+/*=====================================================
+TOTAL REGISTROS
+=====================================================*/
+
+.sueldos-total-registros .badge {
+  font-weight: 500;
+  padding: 7px 10px;
+}
+
+/*=====================================================
+TABLA
+=====================================================*/
+
+.sueldos-table-container {
+  min-height: 300px;
+}
+
+.sueldos-table-container table {
+  min-width: 1050px;
+}
+
+.sueldos-table-container thead th {
+  background-color: #f8f9fa;
+
+  color: #495057;
+
+  font-size: 0.78rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.25px;
+
+  white-space: nowrap;
+
+  border-bottom: 1px solid #dee2e6;
+}
+
+.sueldos-table-container tbody td {
+  font-size: 0.88rem;
+  border-color: #edf0f2;
+}
+
+.sueldos-table-container tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.sueldos-table-container tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.025);
+}
+
+/*=====================================================
+EMPLEADO EN TABLA
+=====================================================*/
+
+.empleado-sueldo-info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.empleado-sueldo-avatar {
+  width: 40px;
+  height: 40px;
+
+  flex: 0 0 40px;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: #e9ecef;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6c757d;
+
+  font-size: 17px;
+}
+
+.empleado-sueldo-avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.empleado-sueldo-nombre {
+  font-weight: 600;
+  color: #212529;
+  line-height: 1.2;
+}
+
+.empleado-sueldo-documento {
+  color: #6c757d;
+  font-size: 0.76rem;
+  margin-top: 3px;
+}
+
+/*=====================================================
+CARGO
+=====================================================*/
+
+.sueldo-rol {
+  color: #495057;
+  font-weight: 500;
+}
+
+.sueldo-rol i {
+  color: #0d6efd;
+}
+
+/*=====================================================
+MONTO SUELDO
+=====================================================*/
+
+.sueldo-monto {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #198754;
+  white-space: nowrap;
+}
+
+/*=====================================================
+BADGES TIPO
+=====================================================*/
+
+.badge-tipo-sueldo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 6px 9px;
+
+  border-radius: 7px;
+
+  font-size: 0.74rem;
+
+  font-weight: 600;
+
+  background: #f1f3f5;
+
+  color: #495057;
+}
+
+.badge-tipo-sueldo i {
+  font-size: 0.75rem;
+}
+
+/*=====================================================
+ESTADOS
+=====================================================*/
+
+.badge-estado-sueldo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 6px 9px;
+
+  border-radius: 7px;
+
+  font-size: 0.74rem;
+
+  font-weight: 600;
+}
+
+.badge-estado-sueldo.activo {
+  color: #146c43;
+  background-color: #d1e7dd;
+}
+
+.badge-estado-sueldo.inactivo {
+  color: #842029;
+  background-color: #f8d7da;
+}
+
+/*=====================================================
+ACCIONES
+=====================================================*/
+
+.acciones-sueldo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+}
+
+.btn-accion-sueldo {
+  width: 34px;
+  height: 34px;
+
+  padding: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  transition: all 0.15s ease;
+}
+
+.btn-accion-sueldo:hover {
+  transform: translateY(-1px);
+}
+
+/*=====================================================
+ESTADO VACÍO
+=====================================================*/
+
+.sueldos-empty-state {
+  padding: 25px 15px;
+}
+
+.sueldos-empty-icon {
+  width: 62px;
+  height: 62px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #f1f3f5;
+
+  color: #6c757d;
+
+  font-size: 25px;
+}
+
+/*=====================================================
+PAGINACIÓN
+=====================================================*/
+
+#paginacionSueldos .page-link {
+  min-width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  margin: 0 2px;
+
+  color: #495057;
+}
+
+#paginacionSueldos .page-item.active .page-link {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+#paginacionSueldos .page-item:not(.disabled) .page-link:hover {
+  background-color: #e9ecef;
+}
+
+/*=====================================================
+MODAL SUELDOS
+=====================================================*/
+
+#modalSueldo .modal-dialog {
+  max-width: 800px;
+  height: calc(100vh - 30px);
+  margin: 15px auto;
+}
+
+#modalSueldo .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 15px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/*=====================================================
+HEADER MODAL
+=====================================================*/
+
+#modalSueldo .modal-header {
+  flex: 0 0 auto;
+
+  padding: 18px 22px;
+
+  border-bottom: 1px solid #edf0f2;
+
+  background-color: #fff;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+/*=====================================================
+FORMULARIO
+=====================================================*/
+
+#modalSueldo #formSueldo {
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+/*=====================================================
+CUERPO DEL MODAL
+=====================================================*/
+
+#modalSueldo .modal-body {
+  flex: 1 1 auto;
+
+  min-height: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 22px;
+
+  background-color: #fff;
+
+  /* Scroll suave */
+  scroll-behavior: smooth;
+
+  /* Evita que el scroll se propague al fondo */
+  overscroll-behavior: contain;
+}
+
+/*=====================================================
+BARRA DE SCROLL
+=====================================================*/
+
+#modalSueldo .modal-body::-webkit-scrollbar {
+  width: 7px;
+}
+
+#modalSueldo .modal-body::-webkit-scrollbar-track {
+  background: #f1f3f5;
+}
+
+#modalSueldo .modal-body::-webkit-scrollbar-thumb {
+  background-color: #ced4da;
+  border-radius: 10px;
+}
+
+#modalSueldo .modal-body::-webkit-scrollbar-thumb:hover {
+  background-color: #adb5bd;
+}
+
+/* Firefox */
+
+#modalSueldo .modal-body {
+  scrollbar-width: thin;
+  scrollbar-color: #ced4da #f1f3f5;
+}
+
+/*=====================================================
+FOOTER MODAL
+=====================================================*/
+
+#modalSueldo .modal-footer {
+  flex: 0 0 auto;
+
+  padding: 15px 22px;
+
+  background-color: #f8f9fa;
+
+  border-top: 1px solid #edf0f2;
+
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 8px;
+}
+
+/*=====================================================
+BOTONES FOOTER
+=====================================================*/
+
+#modalSueldo .modal-footer .btn {
+  min-height: 38px;
+
+  white-space: nowrap;
+}
+
+/*=====================================================
+CABECERA MODAL
+=====================================================*/
+
+.sueldo-modal-icon {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  color: #0d6efd;
+
+  background-color: rgba(13, 110, 253, 0.1);
+
+  font-size: 20px;
+}
+
+/*=====================================================
+INFORMACIÓN DEL EMPLEADO
+=====================================================*/
+
+.sueldo-info-empleado {
+  padding: 12px 15px;
+
+  border: 1px solid #e9ecef;
+
+  border-radius: 10px;
+
+  background-color: #f8f9fa;
+}
+
+#avatarEmpleadoSueldo {
+  width: 55px;
+  height: 55px;
+
+  min-width: 55px;
+  min-height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background-color: #e9ecef;
+}
+
+.sueldo-info-avatar {
+  width: 55px;
+  height: 55px;
+
+  min-width: 55px;
+  min-height: 55px;
+
+  max-width: 55px;
+  max-height: 55px;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
+}
+
+.sueldo-info-avatar-placeholder {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #e9ecef;
+
+  color: #6c757d;
+
+  font-size: 1.5rem;
+}
+
+/*=====================================================
+SECCIONES DEL MODAL
+=====================================================*/
+
+.sueldo-form-section {
+  border: 1px solid #e9ecef;
+
+  border-radius: 12px;
+
+  padding: 18px;
+
+  background-color: #fff;
+
+  margin-bottom: 18px;
+}
+
+.sueldo-form-section:last-child {
+  margin-bottom: 0;
+}
+
+.sueldo-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  color: #343a40;
+
+  margin-bottom: 15px;
+}
+
+.sueldo-section-title i {
+  color: #0d6efd;
+}
+
+/*=====================================================
+CAMPO SUELDO
+=====================================================*/
+
+.input-sueldo-wrapper {
+  position: relative;
+}
+
+.input-sueldo-wrapper .input-group-text {
+  font-weight: 600;
+
+  color: #198754;
+
+  background-color: #f8f9fa;
+}
+
+.input-sueldo {
+  font-size: 1rem;
+
+  font-weight: 600;
+}
+
+/*=====================================================
+RESUMEN SUELDO
+=====================================================*/
+
+.sueldo-resumen {
+  border-radius: 10px;
+
+  padding: 15px;
+
+  background-color: #f8f9fa;
+
+  border: 1px solid #e9ecef;
+}
+
+.sueldo-resumen-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 6px 0;
+
+  font-size: 0.88rem;
+}
+
+.sueldo-resumen-total {
+  margin-top: 7px;
+
+  padding-top: 12px;
+
+  border-top: 1px dashed #ced4da;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+}
+/*=====================================================
+RESPONSIVE MODAL
+=====================================================*/
+
+@media (max-width: 575.98px) {
+  .adm-sueldos-page {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .sueldos-header h2 {
+    font-size: 1.35rem;
+  }
+
+  .sueldos-header-icon {
+    width: 37px;
+    height: 37px;
+    font-size: 18px;
+  }
+
+  .sueldos-header > .d-flex {
+    flex-direction: column;
+  }
+
+  .sueldos-header > .d-flex button {
+    width: 100%;
+  }
+
+  .kpi-sueldo-card .card-body {
+    padding: 15px;
+  }
+
+  .sueldos-main-card {
+    border-radius: 10px;
+  }
+
+  /*=================================================
+  MODAL EN CELULAR
+  =================================================*/
+
+  #modalSueldo .modal-dialog {
+    width: 100%;
+    max-width: none;
+
+    height: 100vh;
+
+    margin: 0;
+  }
+
+  #modalSueldo .modal-content {
+    height: 100vh;
+
+    border-radius: 0;
+  }
+
+  #modalSueldo .modal-header {
+    padding: 15px;
+  }
+
+  #modalSueldo .modal-body {
+    padding: 15px;
+  }
+
+  #modalSueldo .modal-footer {
+    padding: 12px 15px;
+
+    justify-content: stretch;
+  }
+
+  #modalSueldo .modal-footer .btn {
+    flex: 1;
+  }
+}

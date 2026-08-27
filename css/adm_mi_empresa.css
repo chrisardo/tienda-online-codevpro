@@ -1,0 +1,1025 @@
+/*=====================================================
+    CoDevPro Technology
+    Archivo: css/adm_mi_empresa.css
+    Módulo: Mi Empresa
+    Sistema: Inventa
+=====================================================*/
+
+/*=====================================================
+    PÁGINA PRINCIPAL
+======================================================*/
+
+.mi-empresa-page {
+  min-height: calc(100vh - 70px);
+
+  background-color: #f8f9fa;
+}
+
+/*=====================================================
+    ENCABEZADO
+======================================================*/
+
+.mi-empresa-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.mi-empresa-header-icon {
+  width: 44px;
+
+  height: 44px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+
+  font-size: 21px;
+}
+
+.mi-empresa-title {
+  font-size: 28px;
+
+  font-weight: 700;
+
+  color: #212529;
+
+  letter-spacing: -0.3px;
+}
+
+.mi-empresa-subtitle {
+  color: #6c757d;
+
+  font-size: 14px;
+}
+
+/*=====================================================
+    ESTADO GENERAL
+======================================================*/
+
+.mi-empresa-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 14px;
+
+  border-radius: 50px;
+
+  background-color: #eaf7ef;
+
+  color: #198754;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background-color: #198754;
+
+  display: inline-block;
+}
+
+/*=====================================================
+    TARJETAS
+======================================================*/
+
+.mi-empresa-card {
+  border: 1px solid #e9ecef;
+
+  border-radius: 16px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+
+  overflow: hidden;
+
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mi-empresa-card:hover {
+  box-shadow: 0 7px 24px rgba(0, 0, 0, 0.07);
+}
+
+.mi-empresa-card .card-body {
+  padding: 24px;
+}
+
+/*=====================================================
+    TÍTULO DE LAS TARJETAS
+======================================================*/
+
+.section-card-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.section-icon {
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background-color: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+
+  font-size: 19px;
+}
+
+.section-icon-success {
+  background-color: rgba(25, 135, 84, 0.1);
+
+  color: #198754;
+}
+
+.section-icon-warning {
+  background-color: rgba(255, 193, 7, 0.14);
+
+  color: #b58100;
+}
+
+.section-card-title h5 {
+  color: #212529;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.section-card-title p {
+  color: #6c757d;
+
+  font-size: 13px;
+}
+
+/*=====================================================
+    TARJETA DEL LOGO
+======================================================*/
+
+.logo-card {
+  min-height: 420px;
+}
+
+/*=====================================================
+    CONTENEDOR DEL LOGO
+======================================================*/
+
+.empresa-logo-wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.empresa-logo-preview {
+  width: 190px;
+
+  height: 190px;
+
+  border-radius: 18px;
+
+  border: 2px dashed #ced4da;
+
+  background-color: #f8f9fa;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  position: relative;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.empresa-logo-preview:hover {
+  border-color: #0d6efd;
+
+  background-color: #f4f8ff;
+}
+
+/*=====================================================
+    PLACEHOLDER DEL LOGO
+======================================================*/
+
+.logo-placeholder {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #adb5bd;
+
+  text-align: center;
+}
+
+.logo-placeholder i {
+  font-size: 48px;
+}
+
+.logo-placeholder span {
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+/*=====================================================
+    IMAGEN DEL LOGO
+======================================================*/
+
+.empresa-logo-preview img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 12px;
+}
+
+/*=====================================================
+    INFORMACIÓN DEL LOGO
+======================================================*/
+
+.logo-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.logo-info strong {
+  color: #343a40;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.logo-info small {
+  color: #6c757d;
+
+  font-size: 11px;
+}
+
+/*=====================================================
+    ACCIONES DEL LOGO
+======================================================*/
+
+.logo-actions {
+  width: 100%;
+}
+
+.logo-actions .btn {
+  height: 42px;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+/*=====================================================
+    ESTADO DE LA CUENTA
+======================================================*/
+
+.empresa-account-status {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  background-color: #f3faf6;
+
+  border: 1px solid #d8f0e1;
+}
+
+.account-status-icon {
+  width: 40px;
+
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #198754;
+
+  color: #ffffff;
+
+  font-size: 18px;
+}
+
+.empresa-account-status div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.empresa-account-status strong {
+  color: #198754;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.empresa-account-status span {
+  color: #6c757d;
+
+  font-size: 12px;
+}
+
+/*=====================================================
+    FORMULARIO
+======================================================*/
+
+#formMiEmpresa {
+  margin-top: 4px;
+}
+
+#formMiEmpresa .form-label {
+  margin-bottom: 7px;
+
+  color: #343a40;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+#formMiEmpresa .text-danger {
+  font-size: 12px;
+}
+
+/*=====================================================
+    INPUTS
+======================================================*/
+
+#formMiEmpresa .input-group {
+  border-radius: 9px;
+
+  overflow: hidden;
+}
+
+#formMiEmpresa .input-group-text {
+  min-width: 43px;
+
+  justify-content: center;
+
+  background-color: #f8f9fa;
+
+  border-color: #dee2e6;
+
+  color: #6c757d;
+}
+
+#formMiEmpresa .form-control {
+  height: 43px;
+
+  border-color: #dee2e6;
+
+  color: #212529;
+
+  font-size: 13px;
+
+  box-shadow: none;
+}
+
+#formMiEmpresa .form-control::placeholder {
+  color: #adb5bd;
+}
+
+#formMiEmpresa .form-control:focus {
+  border-color: #86b7fe;
+
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.1);
+}
+
+#formMiEmpresa .input-group:focus-within .input-group-text {
+  border-color: #86b7fe;
+
+  color: #0d6efd;
+
+  background-color: #f4f8ff;
+}
+
+/*=====================================================
+    ACCIONES DEL FORMULARIO
+======================================================*/
+
+.form-actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.form-actions .btn {
+  min-height: 41px;
+
+  padding: 8px 18px;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.form-actions .btn-light {
+  background-color: #ffffff;
+
+  color: #495057;
+}
+
+.form-actions .btn-primary {
+  min-width: 150px;
+}
+
+/*=====================================================
+    INFORMACIÓN DE ACCESO
+======================================================*/
+
+.account-info-box {
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #e9ecef;
+
+  border-radius: 11px;
+
+  background-color: #f8f9fa;
+}
+
+.account-info-icon {
+  width: 40px;
+
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background-color: #ffffff;
+
+  color: #0d6efd;
+
+  border: 1px solid #e9ecef;
+
+  font-size: 17px;
+}
+
+.account-info-box > div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+
+  min-width: 0;
+}
+
+.account-info-box span {
+  color: #6c757d;
+
+  font-size: 11px;
+}
+
+.account-info-box strong {
+  color: #212529;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  word-break: break-word;
+}
+
+/*=====================================================
+    BOTÓN CAMBIAR CONTRASEÑA
+======================================================*/
+
+#btnCambiarPassword {
+  margin-left: auto;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+/*=====================================================
+    MODAL CAMBIAR CONTRASEÑA
+======================================================*/
+
+#modalCambiarPassword .modal-content {
+  border: 0;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+#modalCambiarPassword .modal-header {
+  padding: 20px 22px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+#modalCambiarPassword .modal-title {
+  color: #212529;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+#modalCambiarPassword .modal-header small {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 12px;
+}
+
+#modalCambiarPassword .modal-body {
+  padding: 22px;
+}
+
+#modalCambiarPassword .form-label {
+  color: #343a40;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+#modalCambiarPassword .input-group {
+  border-radius: 9px;
+
+  overflow: hidden;
+}
+
+#modalCambiarPassword .input-group-text {
+  min-width: 43px;
+
+  justify-content: center;
+
+  background-color: #f8f9fa;
+
+  border-color: #dee2e6;
+
+  color: #6c757d;
+}
+
+#modalCambiarPassword .form-control {
+  height: 42px;
+
+  font-size: 13px;
+
+  border-color: #dee2e6;
+
+  box-shadow: none;
+}
+
+#modalCambiarPassword .form-control:focus {
+  border-color: #86b7fe;
+
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.1);
+}
+
+.btn-toggle-password {
+  width: 44px;
+
+  border-color: #dee2e6;
+
+  background-color: #ffffff;
+}
+
+.btn-toggle-password:hover {
+  background-color: #f8f9fa;
+}
+
+.password-help {
+  margin-top: 6px;
+
+  color: #6c757d;
+
+  font-size: 11px;
+}
+
+/*=====================================================
+    ALERTA DE SEGURIDAD
+======================================================*/
+
+.password-security-alert {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 12px 13px;
+
+  margin-top: 16px;
+
+  border: 1px solid #cfe2ff;
+
+  border-radius: 10px;
+
+  background-color: #f0f6ff;
+
+  color: #084298;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+.password-security-alert i {
+  flex-shrink: 0;
+
+  font-size: 17px;
+}
+
+/*=====================================================
+    FOOTER MODAL
+======================================================*/
+
+#modalCambiarPassword .modal-footer {
+  padding: 15px 22px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+#modalCambiarPassword .modal-footer .btn {
+  min-height: 40px;
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+/*=====================================================
+    MODAL ELIMINAR LOGO
+======================================================*/
+
+#modalEliminarLogo .modal-content {
+  border: 0;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+#modalEliminarLogo .modal-header {
+  padding: 17px 20px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+#modalEliminarLogo .modal-title {
+  font-size: 16px;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+#modalEliminarLogo .modal-body {
+  padding: 24px 20px;
+}
+
+.delete-logo-icon {
+  width: 60px;
+
+  height: 60px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #fff1f1;
+
+  color: #dc3545;
+
+  font-size: 25px;
+}
+
+#modalEliminarLogo .modal-body p {
+  color: #495057;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+#modalEliminarLogo .modal-footer {
+  padding: 14px 20px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+#modalEliminarLogo .modal-footer .btn {
+  min-height: 39px;
+
+  padding: 7px 16px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+/*=====================================================
+    ESTADOS DE VALIDACIÓN
+======================================================*/
+
+#formMiEmpresa .form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+#formMiEmpresa .form-control.is-valid {
+  border-color: #198754;
+}
+
+/*=====================================================
+    ESTADO DE CARGA
+======================================================*/
+
+.mi-empresa-loading {
+  pointer-events: none;
+
+  opacity: 0.65;
+}
+
+/*=====================================================
+    RESPONSIVE
+======================================================*/
+
+@media (max-width: 1199.98px) {
+  .mi-empresa-title {
+    font-size: 25px;
+  }
+
+  .mi-empresa-card .card-body {
+    padding: 21px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .mi-empresa-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .mi-empresa-status {
+    align-self: flex-start;
+  }
+
+  .logo-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mi-empresa-page {
+    padding-left: 15px !important;
+
+    padding-right: 15px !important;
+  }
+
+  .mi-empresa-title {
+    font-size: 23px;
+  }
+
+  .mi-empresa-subtitle {
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+  .mi-empresa-card .card-body {
+    padding: 18px;
+  }
+
+  .section-card-title {
+    gap: 11px;
+  }
+
+  .section-icon {
+    width: 38px;
+
+    height: 38px;
+
+    font-size: 17px;
+  }
+
+  .section-card-title h5 {
+    font-size: 15px;
+  }
+
+  .section-card-title p {
+    font-size: 12px;
+  }
+
+  .empresa-logo-preview {
+    width: 160px;
+
+    height: 160px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+
+    align-items: stretch;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+
+  .account-info-box {
+    min-height: 65px;
+  }
+
+  #btnCambiarPassword {
+    padding-left: 10px;
+
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .mi-empresa-header-icon {
+    width: 39px;
+
+    height: 39px;
+
+    font-size: 18px;
+  }
+
+  .mi-empresa-title {
+    font-size: 21px;
+  }
+
+  .mi-empresa-status {
+    padding: 7px 12px;
+
+    font-size: 12px;
+  }
+
+  .empresa-logo-preview {
+    width: 145px;
+
+    height: 145px;
+  }
+
+  .logo-placeholder i {
+    font-size: 40px;
+  }
+
+  .account-info-box {
+    padding: 10px;
+
+    gap: 9px;
+  }
+
+  .account-info-icon {
+    width: 36px;
+
+    height: 36px;
+
+    font-size: 15px;
+  }
+
+  #btnCambiarPassword {
+    font-size: 11px;
+  }
+
+  #modalCambiarPassword .modal-body {
+    padding: 18px;
+  }
+
+  #modalCambiarPassword .modal-header {
+    padding: 17px 18px;
+  }
+
+  #modalCambiarPassword .modal-footer {
+    padding: 13px 18px;
+  }
+}
+
+/*=====================================================
+    ACCESIBILIDAD
+======================================================*/
+
+@media (prefers-reduced-motion: reduce) {
+  .mi-empresa-card,
+  .empresa-logo-preview {
+    transition: none;
+  }
+}

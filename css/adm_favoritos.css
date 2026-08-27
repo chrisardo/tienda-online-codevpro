@@ -1,0 +1,23 @@
+.icon-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+}
+
+.card {
+  border-radius: 18px;
+}
+
+.table thead th {
+  white-space: nowrap;
+}
+
+#graficoFavoritosProductos,
+#graficoCategoriasFavoritas {
+  max-height: 350px;
+}

@@ -1,0 +1,423 @@
+/*=====================================================
+  CoDevPro Technology
+  Archivo: css/adm_registrar_proveedor.css
+  Módulo: Registrar Proveedor
+=====================================================*/
+
+/*=====================================================
+  ENCABEZADO
+=====================================================*/
+
+.proveedor-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.proveedor-title {
+  margin: 0;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.proveedor-subtitle {
+  margin: 6px 0 0;
+
+  color: #6c757d;
+
+  font-size: 14px;
+}
+
+.proveedor-back-btn {
+  border: 1px solid #dee2e6;
+
+  width: 34px;
+
+  height: 34px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/*=====================================================
+  ALERTA
+=====================================================*/
+
+.proveedor-alert {
+  border-radius: 10px;
+}
+
+/*=====================================================
+  CARDS
+=====================================================*/
+
+.proveedor-card {
+  border: 1px solid #e9ecef;
+
+  border-radius: 14px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035);
+
+  overflow: hidden;
+}
+
+.proveedor-card-header {
+  background: #ffffff;
+
+  border-bottom: 1px solid #edf0f2;
+
+  padding: 18px 20px;
+}
+
+.proveedor-card-header h5 {
+  font-size: 16px;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.proveedor-card-header small {
+  font-size: 12px;
+}
+
+.proveedor-section-icon {
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 10px;
+
+  background: #eaf2ff;
+
+  color: #0d6efd;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-right: 12px;
+
+  font-size: 18px;
+}
+
+/*=====================================================
+  FORMULARIO
+=====================================================*/
+
+.proveedor-card .card-body {
+  padding: 22px;
+}
+
+.form-label {
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #343a40;
+
+  margin-bottom: 7px;
+}
+
+.form-control,
+.form-select {
+  min-height: 44px;
+
+  border-color: #dee2e6;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+textarea.form-control {
+  min-height: 95px;
+
+  resize: vertical;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #86b7fe;
+
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.1);
+}
+
+.input-group .input-group-text {
+  background: #f8f9fa;
+
+  border-color: #dee2e6;
+
+  color: #6c757d;
+}
+
+.input-group .form-control {
+  border-left: 0;
+}
+
+.input-group .input-group-text + .form-control:focus {
+  border-left: 0;
+}
+
+.form-text {
+  font-size: 11px;
+
+  color: #8a939b;
+
+  line-height: 1.5;
+}
+
+/*=====================================================
+  IMAGEN
+=====================================================*/
+
+.proveedor-image-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+.proveedor-image-preview {
+  width: 100%;
+
+  height: 230px;
+
+  border: 2px dashed #dee2e6;
+
+  border-radius: 12px;
+
+  background: #f8f9fa;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  transition: all 0.2s ease;
+}
+
+.proveedor-image-preview.has-image {
+  border-style: solid;
+
+  border-color: #dee2e6;
+
+  background: #ffffff;
+}
+
+.proveedor-image-preview img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 12px;
+}
+
+.proveedor-image-placeholder {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #adb5bd;
+}
+
+.proveedor-image-placeholder i {
+  font-size: 48px;
+}
+
+.proveedor-image-placeholder span {
+  font-size: 13px;
+}
+
+.proveedor-image-remove {
+  position: absolute;
+
+  top: 10px;
+
+  right: 10px;
+
+  width: 34px;
+
+  height: 34px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
+
+/*=====================================================
+  INFORMACIÓN
+=====================================================*/
+
+.proveedor-info-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid #f0f1f2;
+
+  color: #6c757d;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.proveedor-info-item:last-child {
+  border-bottom: 0;
+
+  padding-bottom: 0;
+}
+
+.proveedor-info-item:first-child {
+  padding-top: 0;
+}
+
+.proveedor-info-item i {
+  color: #0d6efd;
+
+  font-size: 16px;
+
+  margin-top: 1px;
+}
+
+/*=====================================================
+  BOTONES
+=====================================================*/
+
+.proveedor-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.proveedor-actions .btn {
+  min-height: 42px;
+
+  padding-left: 18px;
+
+  padding-right: 18px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+#btnRegistrarProveedor {
+  min-width: 190px;
+}
+
+/*=====================================================
+  ESTADOS DE VALIDACIÓN
+=====================================================*/
+
+.form-control.is-valid,
+.form-select.is-valid {
+  border-color: #198754;
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+/*=====================================================
+  SPINNER
+=====================================================*/
+
+#spinnerProveedor {
+  margin-right: 5px;
+}
+
+/*=====================================================
+  RESPONSIVE
+=====================================================*/
+
+@media (max-width: 991.98px) {
+  .proveedor-header {
+    flex-direction: column;
+  }
+
+  .proveedor-header > div:last-child {
+    width: 100%;
+  }
+
+  .proveedor-header > div:last-child .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .proveedor-title {
+    font-size: 24px;
+  }
+
+  .proveedor-subtitle {
+    font-size: 13px;
+  }
+
+  .proveedor-card .card-body {
+    padding: 16px;
+  }
+
+  .proveedor-card-header {
+    padding: 15px 16px;
+  }
+
+  .proveedor-actions {
+    flex-direction: column-reverse;
+
+    align-items: stretch;
+  }
+
+  .proveedor-actions .btn {
+    width: 100%;
+  }
+
+  #btnRegistrarProveedor {
+    width: 100%;
+  }
+
+  .proveedor-image-preview {
+    height: 200px;
+  }
+}

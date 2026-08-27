@@ -1,0 +1,811 @@
+/*=====================================================
+  CoDevPro Technology
+  Archivo: css/adm_cuentas_bancarias.css
+  Módulo: Cuentas Bancarias
+  Sistema: Inventa
+=====================================================*/
+
+/*=====================================================
+  CONTENEDOR PRINCIPAL
+=====================================================*/
+
+.cuentas-bancarias-page {
+  min-height: calc(100vh - 80px);
+}
+
+/*=====================================================
+  CABECERA DEL MÓDULO
+=====================================================*/
+
+.cuentas-header {
+  padding-top: 4px;
+}
+
+.cuentas-header-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+
+  border-radius: 14px;
+
+  font-size: 25px;
+
+  flex-shrink: 0;
+}
+
+.cuentas-title {
+  font-size: 1.65rem;
+
+  font-weight: 700;
+
+  color: #212529;
+}
+
+.cuentas-subtitle {
+  color: #6c757d;
+
+  font-size: 0.92rem;
+}
+
+.cuentas-btn-nueva {
+  min-height: 44px;
+
+  padding: 0.65rem 1.15rem;
+
+  font-weight: 600;
+
+  border-radius: 8px;
+
+  box-shadow: 0 3px 8px rgba(13, 110, 253, 0.15);
+}
+
+.cuentas-btn-nueva:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 12px rgba(13, 110, 253, 0.2);
+}
+
+/*=====================================================
+  KPI
+=====================================================*/
+
+.cuentas-kpi-card {
+  border: 1px solid #e9ecef !important;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cuentas-kpi-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07) !important;
+}
+
+.cuentas-kpi-card .card-body {
+  padding: 1.25rem;
+}
+
+.cuentas-kpi-label {
+  color: #6c757d;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.25px;
+}
+
+.cuentas-kpi-value {
+  color: #212529;
+
+  font-size: 1.65rem;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.cuentas-saldo-total {
+  color: #198754;
+}
+
+.cuentas-kpi-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  font-size: 1.25rem;
+}
+
+.cuentas-kpi-icon-primary {
+  background: rgba(13, 110, 253, 0.1);
+
+  color: #0d6efd;
+}
+
+.cuentas-kpi-icon-success {
+  background: rgba(25, 135, 84, 0.1);
+
+  color: #198754;
+}
+
+.cuentas-kpi-icon-secondary {
+  background: rgba(108, 117, 125, 0.12);
+
+  color: #6c757d;
+}
+
+.cuentas-kpi-icon-info {
+  background: rgba(13, 202, 240, 0.12);
+
+  color: #0aa2c0;
+}
+
+.cuentas-kpi-footer {
+  color: #8a9198;
+
+  font-size: 0.78rem;
+}
+
+.cuentas-kpi-footer i {
+  font-size: 0.82rem;
+}
+
+/*=====================================================
+  CARD PRINCIPAL
+=====================================================*/
+
+.cuentas-main-card {
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+/*=====================================================
+  FILTROS
+=====================================================*/
+
+.cuentas-filtros-container {
+  padding: 1.25rem 1.35rem;
+}
+
+.cuentas-filter-label {
+  margin-bottom: 0.45rem;
+
+  color: #495057;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+}
+
+.cuentas-search-group .input-group-text {
+  background: #ffffff;
+
+  border-right: 0;
+
+  color: #6c757d;
+}
+
+.cuentas-search-group .form-control {
+  border-left: 0;
+}
+
+.cuentas-search-group .form-control:focus {
+  border-color: #86b7fe;
+
+  box-shadow: none;
+}
+
+.cuentas-search-group:focus-within .input-group-text {
+  border-color: #86b7fe;
+
+  color: #0d6efd;
+}
+
+.cuentas-filtros-container .form-select,
+.cuentas-filtros-container .form-control {
+  min-height: 42px;
+
+  border-color: #dee2e6;
+
+  border-radius: 7px;
+
+  font-size: 0.88rem;
+}
+
+.cuentas-filtros-container .form-select:focus,
+.cuentas-filtros-container .form-control:focus {
+  border-color: #86b7fe;
+
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.1);
+}
+
+.cuentas-btn-limpiar {
+  min-height: 42px;
+
+  border-radius: 7px;
+}
+
+.cuentas-btn-limpiar:hover {
+  background-color: #f8f9fa;
+
+  color: #212529;
+}
+
+/*=====================================================
+  DIVISOR
+=====================================================*/
+
+.cuentas-divider {
+  height: 1px;
+
+  background-color: #edf0f2;
+}
+
+/*=====================================================
+  CABECERA DE TABLA
+=====================================================*/
+
+.cuentas-table-title {
+  color: #212529;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+}
+
+.cuentas-table-title i {
+  color: #0d6efd;
+}
+
+.cuentas-table-description {
+  color: #8a9198;
+
+  font-size: 0.82rem;
+}
+
+.cuentas-registros-info {
+  color: #6c757d;
+
+  font-size: 0.82rem;
+}
+
+.cuentas-registros-info strong {
+  color: #212529;
+}
+
+/*=====================================================
+  TABLA
+=====================================================*/
+
+.cuentas-table-wrapper {
+  border-top: 1px solid #edf0f2;
+}
+
+.cuentas-table {
+  min-width: 760px;
+}
+
+.cuentas-table thead th {
+  padding: 0.85rem 1.25rem;
+
+  background-color: #f8f9fa;
+
+  border-bottom: 1px solid #e9ecef;
+
+  color: #6c757d;
+
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.35px;
+
+  white-space: nowrap;
+}
+
+.cuentas-table tbody td {
+  padding: 1rem 1.25rem;
+
+  border-bottom: 1px solid #f0f1f2;
+
+  vertical-align: middle;
+}
+
+.cuentas-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.cuentas-table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.cuentas-table tbody tr:hover {
+  background-color: #fafbfc;
+}
+
+/*=====================================================
+  ANCHOS DE COLUMNAS
+=====================================================*/
+
+.cuenta-columna-nombre {
+  width: 45%;
+}
+
+.cuenta-columna-balance {
+  width: 20%;
+}
+
+.cuenta-columna-estado {
+  width: 15%;
+}
+
+.cuenta-columna-acciones {
+  width: 20%;
+}
+
+/*=====================================================
+  INFORMACIÓN DE CUENTA
+=====================================================*/
+
+.cuenta-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.cuenta-icono {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background-color: rgba(13, 110, 253, 0.08);
+
+  color: #0d6efd;
+
+  border-radius: 10px;
+
+  font-size: 1.1rem;
+}
+
+.cuenta-nombre {
+  margin: 0;
+
+  color: #212529;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
+
+.cuenta-id {
+  margin-top: 2px;
+
+  color: #8a9198;
+
+  font-size: 0.73rem;
+}
+
+/*=====================================================
+  BALANCE
+=====================================================*/
+
+.cuenta-balance {
+  color: #198754;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.cuenta-balance.negativo {
+  color: #dc3545;
+}
+
+/*=====================================================
+  BADGES DE ESTADO
+=====================================================*/
+
+.cuenta-estado-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 0.42rem 0.65rem;
+
+  border-radius: 20px;
+
+  font-size: 0.72rem;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.cuenta-estado-activa {
+  background-color: rgba(25, 135, 84, 0.1);
+
+  color: #198754;
+}
+
+.cuenta-estado-inactiva {
+  background-color: rgba(108, 117, 125, 0.12);
+
+  color: #6c757d;
+}
+
+.cuenta-estado-badge i {
+  font-size: 0.58rem;
+}
+
+/*=====================================================
+  BOTONES DE ACCIÓN
+=====================================================*/
+
+.cuenta-acciones {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 5px;
+}
+
+.btn-cuenta-accion {
+  width: 34px;
+  height: 34px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border-radius: 7px;
+
+  border: 1px solid #e5e7eb;
+
+  background-color: #ffffff;
+
+  color: #6c757d;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.btn-cuenta-accion:hover {
+  background-color: #f8f9fa;
+
+  color: #212529;
+}
+
+.btn-cuenta-ver:hover {
+  color: #0d6efd;
+
+  border-color: rgba(13, 110, 253, 0.3);
+
+  background-color: rgba(13, 110, 253, 0.06);
+}
+
+.btn-cuenta-editar:hover {
+  color: #ffc107;
+
+  border-color: rgba(255, 193, 7, 0.35);
+
+  background-color: rgba(255, 193, 7, 0.08);
+}
+
+.btn-cuenta-eliminar:hover {
+  color: #dc3545;
+
+  border-color: rgba(220, 53, 69, 0.3);
+
+  background-color: rgba(220, 53, 69, 0.06);
+}
+
+.btn-cuenta-restaurar:hover {
+  color: #198754;
+
+  border-color: rgba(25, 135, 84, 0.3);
+
+  background-color: rgba(25, 135, 84, 0.06);
+}
+
+/*=====================================================
+  ESTADO VACÍO
+=====================================================*/
+
+.cuentas-empty-state {
+  padding: 4rem 1.5rem !important;
+
+  color: #6c757d;
+}
+
+.cuentas-empty-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #f1f3f5;
+
+  color: #adb5bd;
+
+  font-size: 1.7rem;
+}
+
+.cuentas-empty-state h6 {
+  color: #495057;
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+}
+
+.cuentas-empty-state p {
+  color: #8a9198;
+
+  font-size: 0.82rem;
+}
+
+/*=====================================================
+  LOADING
+=====================================================*/
+
+.cuentas-loading {
+  padding: 3.5rem 1rem !important;
+
+  text-align: center;
+
+  color: #6c757d;
+}
+
+.cuentas-loading .spinner-border {
+  width: 2rem;
+  height: 2rem;
+}
+
+/*=====================================================
+  FOOTER TABLA
+=====================================================*/
+
+.cuentas-table-footer {
+  border-top: 1px solid #edf0f2;
+
+  padding: 1rem 1.25rem;
+}
+
+.cuentas-footer-info {
+  color: #6c757d;
+
+  font-size: 0.8rem;
+}
+
+/*=====================================================
+  PAGINACIÓN
+=====================================================*/
+
+.cuentas-pagination {
+  gap: 4px;
+}
+
+.cuentas-pagination .page-item {
+  margin: 0;
+}
+
+.cuentas-pagination .page-link {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border-radius: 7px !important;
+
+  border: 1px solid #dee2e6;
+
+  color: #495057;
+
+  background-color: #ffffff;
+
+  font-size: 0.8rem;
+}
+
+.cuentas-pagination .page-link:hover {
+  background-color: #f8f9fa;
+
+  border-color: #ced4da;
+
+  color: #0d6efd;
+}
+
+.cuentas-pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+
+  border-color: #0d6efd;
+
+  color: #ffffff;
+}
+
+.cuentas-pagination .page-item.disabled .page-link {
+  background-color: #f8f9fa;
+
+  border-color: #e9ecef;
+
+  color: #adb5bd;
+}
+
+/*=====================================================
+  RESPONSIVE
+=====================================================*/
+
+@media (max-width: 1199.98px) {
+  .cuenta-columna-nombre {
+    width: 40%;
+  }
+
+  .cuenta-columna-balance {
+    width: 22%;
+  }
+
+  .cuenta-columna-estado {
+    width: 18%;
+  }
+
+  .cuenta-columna-acciones {
+    width: 20%;
+  }
+}
+
+/*=====================================================
+  TABLET
+=====================================================*/
+
+@media (max-width: 991.98px) {
+  .cuentas-bancarias-page {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .cuentas-title {
+    font-size: 1.45rem;
+  }
+
+  .cuentas-subtitle {
+    font-size: 0.86rem;
+  }
+
+  .cuentas-btn-nueva {
+    width: 100%;
+  }
+
+  .cuentas-filtros-container {
+    padding: 1.1rem;
+  }
+}
+
+/*=====================================================
+  MÓVIL
+=====================================================*/
+
+@media (max-width: 575.98px) {
+  .cuentas-bancarias-page {
+    padding-top: 1rem !important;
+
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  .cuentas-header-icon {
+    width: 46px;
+    height: 46px;
+
+    font-size: 21px;
+
+    border-radius: 11px;
+  }
+
+  .cuentas-title {
+    font-size: 1.25rem;
+  }
+
+  .cuentas-subtitle {
+    font-size: 0.79rem;
+
+    line-height: 1.4;
+  }
+
+  .cuentas-kpi-card .card-body {
+    padding: 1rem;
+  }
+
+  .cuentas-kpi-value {
+    font-size: 1.4rem;
+  }
+
+  .cuentas-kpi-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 1.05rem;
+  }
+
+  .cuentas-main-card {
+    border-radius: 10px;
+  }
+
+  .cuentas-filtros-container {
+    padding: 1rem;
+  }
+
+  .cuentas-table-title {
+    font-size: 0.92rem;
+  }
+
+  .cuentas-table-description {
+    font-size: 0.77rem;
+  }
+
+  .cuentas-registros-info {
+    font-size: 0.76rem;
+  }
+
+  .cuentas-table-footer {
+    padding: 0.9rem 1rem;
+  }
+
+  .cuentas-footer-info {
+    text-align: center;
+  }
+
+  .cuentas-pagination {
+    justify-content: center;
+  }
+}

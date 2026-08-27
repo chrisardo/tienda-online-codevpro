@@ -1,0 +1,30 @@
+.avatar-cliente {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.table-hover tbody tr {
+  transition: 0.2s;
+}
+
+.table-hover tbody tr:hover {
+  background: #f8f9ff;
+}
+
+.badge-estadistica {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+}
+
+.btn-group .btn {
+  border-radius: 10px !important;
+}
+
+.btn-group .btn:hover {
+  transform: translateY(-2px);
+}
